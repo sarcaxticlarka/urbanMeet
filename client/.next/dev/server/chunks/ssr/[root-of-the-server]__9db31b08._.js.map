@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/underxcore/Desktop/urbanMeet/client/app/landing/page.js"],"sourcesContent":["import React from 'react'\n\nconst page = () => {\n  return (\n    <div>\n        <HeroSection />\n    </div>\n  )\n}\n\nexport default page"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,OAAO;IACX,qBACE,gRAAC;kBACG,cAAA,gRAAC;;;;;;;;;;AAGT;uCAEe"}}]
+}

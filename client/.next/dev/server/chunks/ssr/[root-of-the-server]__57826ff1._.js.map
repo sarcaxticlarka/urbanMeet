@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/underxcore/Desktop/urbanMeet/client/app/dashboard/page.tsx"],"sourcesContent":["import React from 'react'\n\nexport default function DashboardPage() {\n  return (\n    <div className=\"p-6\">\n      <h2 className=\"text-2xl font-semibold\">Organizer Dashboard</h2>\n      <p className=\"mt-2 text-sm text-zinc-400\">Summary metrics will appear here.</p>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACtB,qBACE,gRAAC;QAAI,WAAU;;0BACb,gRAAC;gBAAG,WAAU;0BAAyB;;;;;;0BACvC,gRAAC;gBAAE,WAAU;0BAA6B;;;;;;;;;;;;AAGhD"}}]
+}
