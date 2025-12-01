@@ -42,33 +42,18 @@ function DashboardPage() {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
+                }),
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get('/users/me/following', {
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    }
                 })
             ]).then({
-                "DashboardPage.useEffect": ([userRes, groupsRes, eventsRes])=>{
+                "DashboardPage.useEffect": ([userRes, groupsRes, eventsRes, followingRes])=>{
                     setUser(userRes.data.user);
                     setGroups(groupsRes.data.groups?.slice(0, 3) || []);
                     setEvents(eventsRes.data.events?.slice(0, 3) || []);
-                    // Mock followings for now
-                    setFollowings([
-                        {
-                            id: '1',
-                            name: 'Padhang Satrio',
-                            role: 'Mentor',
-                            avatarUrl: null
-                        },
-                        {
-                            id: '2',
-                            name: 'Zakir Horizontal',
-                            role: 'Mentor',
-                            avatarUrl: null
-                        },
-                        {
-                            id: '3',
-                            name: 'Leonardo Samuel',
-                            role: 'Mentor',
-                            avatarUrl: null
-                        }
-                    ]);
+                    setFollowings(followingRes.data.following?.slice(0, 3) || []);
                 }
             }["DashboardPage.useEffect"]).catch({
                 "DashboardPage.useEffect": ()=>null
@@ -91,12 +76,12 @@ function DashboardPage() {
                 children: "Loading dashboard..."
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                lineNumber: 47,
+                lineNumber: 43,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-            lineNumber: 46,
+            lineNumber: 42,
             columnNumber: 7
         }, this);
     }
@@ -119,7 +104,7 @@ function DashboardPage() {
                                             children: "Overview"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 56,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -143,7 +128,7 @@ function DashboardPage() {
                                                                     height: "7"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                    lineNumber: 63,
+                                                                    lineNumber: 59,
                                                                     columnNumber: 116
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -153,7 +138,7 @@ function DashboardPage() {
                                                                     height: "7"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                    lineNumber: 63,
+                                                                    lineNumber: 59,
                                                                     columnNumber: 156
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -163,7 +148,7 @@ function DashboardPage() {
                                                                     height: "7"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                    lineNumber: 63,
+                                                                    lineNumber: 59,
                                                                     columnNumber: 197
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -173,8 +158,48 @@ function DashboardPage() {
                                                                     height: "7"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                    lineNumber: 63,
+                                                                    lineNumber: 59,
                                                                     columnNumber: 239
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                            lineNumber: 59,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        "Dashboard"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                    lineNumber: 58,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/discover",
+                                                    className: "flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-zinc-700 hover:bg-zinc-100",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            className: "h-5 w-5",
+                                                            viewBox: "0 0 24 24",
+                                                            fill: "none",
+                                                            stroke: "currentColor",
+                                                            strokeWidth: "2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                                                    cx: "11",
+                                                                    cy: "11",
+                                                                    r: "8"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                    lineNumber: 63,
+                                                                    columnNumber: 116
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "m21 21-4.35-4.35"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                    lineNumber: 63,
+                                                                    columnNumber: 147
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
@@ -182,7 +207,7 @@ function DashboardPage() {
                                                             lineNumber: 63,
                                                             columnNumber: 21
                                                         }, this),
-                                                        "Dashboard"
+                                                        "Discover People"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
@@ -303,7 +328,7 @@ function DashboardPage() {
                                                             lineNumber: 75,
                                                             columnNumber: 21
                                                         }, this),
-                                                        "Task"
+                                                        "Events"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
@@ -313,13 +338,13 @@ function DashboardPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 55,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -486,12 +511,12 @@ function DashboardPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                            lineNumber: 58,
+                            lineNumber: 54,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                        lineNumber: 57,
+                        lineNumber: 53,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1484,7 +1509,8 @@ function DashboardPage() {
                                                     lineNumber: 268,
                                                     columnNumber: 19
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/connections",
                                                     className: "text-indigo-600 hover:text-indigo-500",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                         className: "h-5 w-5",
@@ -1494,20 +1520,17 @@ function DashboardPage() {
                                                         strokeWidth: "2",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
-                                                                x1: "12",
-                                                                y1: "5",
-                                                                x2: "12",
-                                                                y2: "19"
+                                                                x1: "5",
+                                                                y1: "12",
+                                                                x2: "19",
+                                                                y2: "12"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
                                                                 lineNumber: 270,
                                                                 columnNumber: 116
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
-                                                                x1: "5",
-                                                                y1: "12",
-                                                                x2: "19",
-                                                                y2: "12"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+                                                                points: "12 5 19 12 12 19"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
                                                                 lineNumber: 270,
@@ -1532,92 +1555,130 @@ function DashboardPage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "mt-4 space-y-3",
-                                            children: followings.map((person)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between",
+                                            children: [
+                                                followings.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-center py-4",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center gap-3",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "relative",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "h-10 w-10 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-semibold",
-                                                                            children: person.name.slice(0, 1)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                            lineNumber: 278,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-500"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                            lineNumber: 281,
-                                                                            columnNumber: 27
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                    lineNumber: 277,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                            className: "text-sm font-medium text-zinc-900",
-                                                                            children: person.name
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                            lineNumber: 284,
-                                                                            columnNumber: 27
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                            className: "text-xs text-zinc-500",
-                                                                            children: person.role
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                            lineNumber: 285,
-                                                                            columnNumber: 27
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                                    lineNumber: 283,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-sm text-zinc-500 mb-3",
+                                                            children: "No connections yet"
+                                                        }, void 0, false, {
                                                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
                                                             lineNumber: 276,
                                                             columnNumber: 23
                                                         }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: "rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-600 hover:bg-indigo-100",
-                                                            children: "Follow"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                            href: "/discover",
+                                                            className: "inline-block text-xs font-medium text-pink-600 hover:text-pink-700",
+                                                            children: "Discover People →"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                                            lineNumber: 288,
+                                                            lineNumber: 277,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
-                                                }, person.id, true, {
+                                                }, void 0, true, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
                                                     lineNumber: 275,
                                                     columnNumber: 21
-                                                }, this))
-                                        }, void 0, false, {
+                                                }, this),
+                                                followings.map((person)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-center gap-3",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "relative",
+                                                                        children: [
+                                                                            person.avatarUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                                src: person.avatarUrl,
+                                                                                alt: person.name,
+                                                                                className: "h-10 w-10 rounded-full object-cover"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                                lineNumber: 287,
+                                                                                columnNumber: 29
+                                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "h-10 w-10 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-semibold",
+                                                                                children: person.name?.slice(0, 1) || 'U'
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                                lineNumber: 289,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-500"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                                lineNumber: 293,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                        lineNumber: 285,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                                className: "text-sm font-medium text-zinc-900",
+                                                                                children: person.name || 'User'
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                                lineNumber: 296,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                                className: "text-xs text-zinc-500",
+                                                                                children: person.bio || 'Member'
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                                lineNumber: 297,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                        lineNumber: 295,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                lineNumber: 284,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                href: `/profile/${person.id}`,
+                                                                className: "rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-600 hover:bg-indigo-100",
+                                                                children: "View"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                                lineNumber: 300,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, person.id, true, {
+                                                        fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
+                                                        lineNumber: 283,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
                                             lineNumber: 273,
                                             columnNumber: 17
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: "mt-4 w-full rounded-lg bg-indigo-50 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-100",
-                                            children: "See All"
+                                        followings.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/connections",
+                                            className: "mt-4 block w-full rounded-lg bg-indigo-50 py-2 text-center text-sm font-medium text-indigo-600 hover:bg-indigo-100",
+                                            children: "See All Connections"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                                            lineNumber: 294,
-                                            columnNumber: 17
+                                            lineNumber: 307,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
@@ -1639,17 +1700,17 @@ function DashboardPage() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-                lineNumber: 55,
+                lineNumber: 51,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-            lineNumber: 54,
+            lineNumber: 50,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/dashboard/page.tsx",
-        lineNumber: 53,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }

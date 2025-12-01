@@ -1,13 +1,16 @@
 "use client"
-import React, { useState } from 'react'
+export const dynamic = 'force-dynamic'
+import React, { useEffect, useState } from 'react'
 import { MdEmail, MdLock } from 'react-icons/md'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import API from '@/lib/api'
 import { validateEmail } from '@/lib/validation'
+import { useAuth } from '@/context/AuthContext';
 
 export default function LoginPage() {
+  const { login, isLoggedIn } = useAuth();
   const router = useRouter()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -15,6 +18,13 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null)
   const [showPassword, setShowPassword] = useState(false)
   const emailValid = validateEmail(email)
+
+  // If already authenticated, redirect away from login page
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.replace('/profile')
+    }
+  }, [isLoggedIn, router])
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -24,7 +34,7 @@ export default function LoginPage() {
       const res = await API.post('/auth/login', { email, password })
       const { token } = res.data
       if (token) {
-        localStorage.setItem('token', token)
+        login(token); // Use AuthContext to update state
         router.push('/profile')
       }
     } catch (err: any) {
@@ -32,6 +42,15 @@ export default function LoginPage() {
     } finally {
       setLoading(false)
     }
+  }
+
+  // While redirecting, avoid flashing the login form
+  if (isLoggedIn) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#F5F5F5]">
+        <p className="text-sm text-zinc-600">Redirecting to your profile...</p>
+      </div>
+    )
   }
 
   return (

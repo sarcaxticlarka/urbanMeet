@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
  
 const cityData = [
   {
@@ -59,10 +60,11 @@ export default function MeetupCities() {
             style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}
           >
             {cityData.map((city, index) => (
-              <div
+              <Link
                 key={index}
                 className={`relative bg-white rounded-[32px] shadow-xl w-[300px] h-[340px] flex-shrink-0 flex flex-col items-center justify-end overflow-hidden border-b-4 ${city.accent} transition-transform duration-300 hover:scale-[1.02]`}
                 style={{boxShadow: '0 4px 24px 0 rgba(0,0,0,0.08)'}}
+                href={`/events?city=${encodeURIComponent(city.name)}`}
               >
      
                 <div style={{zIndex: 20, position: 'absolute', left: 0, top: 0}}>
@@ -93,7 +95,7 @@ export default function MeetupCities() {
                 <div className="w-full py-8 text-center text-xl font-bold text-gray-900">
                   {city.name}
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

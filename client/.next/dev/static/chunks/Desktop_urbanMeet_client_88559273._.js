@@ -11,6 +11,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$clie
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/@tanstack/react-query/build/modern/useQuery.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/lib/api.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -22,9 +23,11 @@ async function fetchGroup(id) {
     const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get(`/groups/${id}`);
     return res.data.group;
 }
-function GroupPage({ params }) {
+;
+function GroupPage() {
     _s();
-    const { id } = params;
+    const params = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"])();
+    const id = params?.id;
     const { data: group, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey: [
             'group',
@@ -32,7 +35,8 @@ function GroupPage({ params }) {
         ],
         queryFn: {
             "GroupPage.useQuery": ()=>fetchGroup(id)
-        }["GroupPage.useQuery"]
+        }["GroupPage.useQuery"],
+        enabled: !!id
     });
     const [joining, setJoining] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useState(false);
     const [following, setFollowing] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useState(false);
@@ -75,7 +79,7 @@ function GroupPage({ params }) {
         children: "Loading..."
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-        lineNumber: 45,
+        lineNumber: 48,
         columnNumber: 25
     }, this);
     if (!group) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -83,7 +87,7 @@ function GroupPage({ params }) {
         children: "Group not found."
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-        lineNumber: 46,
+        lineNumber: 49,
         columnNumber: 22
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -107,7 +111,7 @@ function GroupPage({ params }) {
                                         d: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 56,
                                         columnNumber: 121
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -116,32 +120,32 @@ function GroupPage({ params }) {
                                         r: "4"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                        lineNumber: 53,
-                                        columnNumber: 174
+                                        lineNumber: 56,
+                                        columnNumber: 175
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M23 21v-2a4 4 0 0 0-3-3.87"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                        lineNumber: 53,
-                                        columnNumber: 203
+                                        lineNumber: 56,
+                                        columnNumber: 205
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M16 3.13a4 4 0 0 1 0 7.75"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                        lineNumber: 53,
-                                        columnNumber: 241
+                                        lineNumber: 56,
+                                        columnNumber: 244
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                lineNumber: 53,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 52,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -149,7 +153,7 @@ function GroupPage({ params }) {
                             children: group.name
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 55,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -162,13 +166,13 @@ function GroupPage({ params }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 56,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                    lineNumber: 51,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -176,7 +180,7 @@ function GroupPage({ params }) {
                     children: group.description
                 }, void 0, false, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                    lineNumber: 58,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -189,7 +193,7 @@ function GroupPage({ params }) {
                             children: joining ? 'Joining...' : 'Join Group'
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 62,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -199,13 +203,13 @@ function GroupPage({ params }) {
                             children: following ? 'Following...' : 'Follow Group'
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 69,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                    lineNumber: 61,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -219,7 +223,7 @@ function GroupPage({ params }) {
                                     children: "Upcoming events"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 82,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -228,13 +232,13 @@ function GroupPage({ params }) {
                                     children: "Create Event"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 78,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -248,7 +252,7 @@ function GroupPage({ params }) {
                                             children: e.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -256,47 +260,48 @@ function GroupPage({ params }) {
                                             children: new Date(e.startsAt).toLocaleString()
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 91,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, e.id, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 89,
                                     columnNumber: 15
                                 }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sm text-zinc-400",
                                 children: "No upcoming events"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                                lineNumber: 90,
+                                lineNumber: 93,
                                 columnNumber: 18
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                            lineNumber: 84,
+                            lineNumber: 87,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-                    lineNumber: 77,
+                    lineNumber: 80,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-            lineNumber: 50,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/groups/[id]/page.tsx",
-        lineNumber: 49,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
-_s(GroupPage, "8fQ8kn+eNc9sneRYF9gKcyXsHVw=", false, function() {
+_s(GroupPage, "WEIO+NwtCD4H1oJk2DhaOeGLWJY=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"]
     ];
 });

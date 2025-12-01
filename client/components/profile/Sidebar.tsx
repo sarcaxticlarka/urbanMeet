@@ -11,11 +11,11 @@ interface NavItem {
 
 const nav: NavItem[] = [
   { label: 'Profile', href: '/profile', icon: <span className="text-xl">👤</span> },
+  { label: 'Discover', href: '/discover', icon: <span className="text-xl">�</span> },
   { label: 'Feeds', href: '/feeds', icon: <span className="text-xl">📰</span> },
-  { label: 'Event', href: '/events', icon: <span className="text-xl">🎫</span>, badge: 34 },
-  { label: 'Charity', href: '/charity', icon: <span className="text-xl">🎗️</span>, badge: 22 },
-  { label: 'Friends', href: '/friends', icon: <span className="text-xl">👥</span> },
-  { label: 'Community', href: '/community', icon: <span className="text-xl">🌐</span> },
+  { label: 'Event', href: '/events', icon: <span className="text-xl">�</span> },
+  { label: 'Groups', href: '/groups', icon: <span className="text-xl">👥</span> },
+  { label: 'Dashboard', href: '/dashboard', icon: <span className="text-xl">📊</span> },
 ]
 
 export function Sidebar() {

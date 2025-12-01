@@ -18,17 +18,13 @@ export default function DashboardPage() {
       API.get('/users/me', { headers: { Authorization: `Bearer ${token}` } }),
       API.get('/groups', { headers: { Authorization: `Bearer ${token}` } }),
       API.get('/events', { headers: { Authorization: `Bearer ${token}` } }),
+      API.get('/users/me/following', { headers: { Authorization: `Bearer ${token}` } }),
     ])
-      .then(([userRes, groupsRes, eventsRes]) => {
+      .then(([userRes, groupsRes, eventsRes, followingRes]) => {
         setUser(userRes.data.user)
         setGroups(groupsRes.data.groups?.slice(0, 3) || [])
         setEvents(eventsRes.data.events?.slice(0, 3) || [])
-        // Mock followings for now
-        setFollowings([
-          { id: '1', name: 'Padhang Satrio', role: 'Mentor', avatarUrl: null },
-          { id: '2', name: 'Zakir Horizontal', role: 'Mentor', avatarUrl: null },
-          { id: '3', name: 'Leonardo Samuel', role: 'Mentor', avatarUrl: null },
-        ])
+        setFollowings(followingRes.data.following?.slice(0, 3) || [])
       })
       .catch(() => null)
       .finally(() => setLoading(false))
@@ -63,6 +59,10 @@ export default function DashboardPage() {
                     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
                     Dashboard
                   </Link>
+                  <Link href="/discover" className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-zinc-700 hover:bg-zinc-100">
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    Discover People
+                  </Link>
                   <Link href="/inbox" className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-zinc-700 hover:bg-zinc-100">
                     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     Inbox
@@ -73,7 +73,7 @@ export default function DashboardPage() {
                   </Link>
                   <Link href="/events" className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-zinc-700 hover:bg-zinc-100">
                     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M2 12h20"/></svg>
-                    Task
+                    Events
                   </Link>
                 </nav>
               </div>
@@ -266,34 +266,48 @@ export default function DashboardPage() {
               <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-zinc-200">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold text-zinc-900">Your Connections</h3>
-                  <button className="text-indigo-600 hover:text-indigo-500">
-                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </button>
+                  <Link href="/connections" className="text-indigo-600 hover:text-indigo-500">
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </Link>
                 </div>
                 <div className="mt-4 space-y-3">
+                  {followings.length === 0 && (
+                    <div className="text-center py-4">
+                      <p className="text-sm text-zinc-500 mb-3">No connections yet</p>
+                      <Link href="/discover" className="inline-block text-xs font-medium text-pink-600 hover:text-pink-700">
+                        Discover People →
+                      </Link>
+                    </div>
+                  )}
                   {followings.map((person) => (
                     <div key={person.id} className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <div className="relative">
-                          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-semibold">
-                            {person.name.slice(0, 1)}
-                          </div>
+                          {person.avatarUrl ? (
+                            <img src={person.avatarUrl} alt={person.name} className="h-10 w-10 rounded-full object-cover" />
+                          ) : (
+                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-semibold">
+                              {person.name?.slice(0, 1) || 'U'}
+                            </div>
+                          )}
                           <div className="absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-white bg-green-500"></div>
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-zinc-900">{person.name}</p>
-                          <p className="text-xs text-zinc-500">{person.role}</p>
+                          <p className="text-sm font-medium text-zinc-900">{person.name || 'User'}</p>
+                          <p className="text-xs text-zinc-500">{person.bio || 'Member'}</p>
                         </div>
                       </div>
-                      <button className="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-600 hover:bg-indigo-100">
-                        Follow
-                      </button>
+                      <Link href={`/profile/${person.id}`} className="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-600 hover:bg-indigo-100">
+                        View
+                      </Link>
                     </div>
                   ))}
                 </div>
-                <button className="mt-4 w-full rounded-lg bg-indigo-50 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-100">
-                  See All
-                </button>
+                {followings.length > 0 && (
+                  <Link href="/connections" className="mt-4 block w-full rounded-lg bg-indigo-50 py-2 text-center text-sm font-medium text-indigo-600 hover:bg-indigo-100">
+                    See All Connections
+                  </Link>
+                )}
               </div>
             </div>
           </aside>

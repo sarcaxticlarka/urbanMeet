@@ -1,4 +1,5 @@
 "use client"
+export const dynamic = 'force-dynamic'
 import React, { useState, useEffect } from 'react'
 import { MdEmail, MdLock } from 'react-icons/md'
 import { useRouter } from 'next/navigation'
@@ -6,8 +7,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import API from '@/lib/api'
 import { validateEmail } from '@/lib/validation'
+import { useAuth } from '@/context/AuthContext';
 
 export default function RegisterPage() {
+  const { login, isLoggedIn } = useAuth();
   const router = useRouter()
   const [email, setEmail] = useState('')
   const [emailAvailable, setEmailAvailable] = useState<boolean | null>(null)
@@ -55,6 +58,13 @@ export default function RegisterPage() {
     return () => { active = false; clearTimeout(t) }
   }, [password])
 
+  // If user is already authenticated, redirect them away from register page
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.replace('/profile')
+    }
+  }, [isLoggedIn, router])
+
   const submit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
@@ -78,7 +88,7 @@ export default function RegisterPage() {
       const res = await API.post('/auth/register', { email, password, name })
       const { token } = res.data
       if (token) {
-        localStorage.setItem('token', token)
+        login(token); // Use AuthContext to update state
         router.push('/profile/complete')
       }
     } catch (err: any) {
@@ -86,6 +96,14 @@ export default function RegisterPage() {
     } finally {
       setLoading(false)
     }
+  }
+
+  if (isLoggedIn) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#F5F5F5]">
+        <p className="text-sm text-zinc-600">Redirecting to your profile...</p>
+      </div>
+    )
   }
 
   return (

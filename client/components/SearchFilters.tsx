@@ -15,28 +15,40 @@ export default function SearchFilters({ onFilter }: Props) {
     onFilter({ city, from, to })
   }
 
+  const handleClear = () => {
+    setCity('')
+    setFrom('')
+    setTo('')
+    onFilter({ city: '', from: '', to: '' })
+  }
+
   return (
-    <form onSubmit={handleSubmit} className="flex flex-wrap gap-3 rounded-xl bg-white/20 p-4 backdrop-blur-md">
+    <form onSubmit={handleSubmit} className="flex flex-wrap gap-3 rounded-xl bg-white p-4 shadow-sm border border-zinc-200">
       <input
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        placeholder="City"
-        className="rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-white/60"
+        placeholder="Filter by city..."
+        className="rounded-md border border-zinc-300 bg-white px-4 py-2 text-sm text-zinc-700 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
       />
       <input
         type="date"
         value={from}
         onChange={(e) => setFrom(e.target.value)}
-        className="rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white"
+        placeholder="From date"
+        className="rounded-md border border-zinc-300 bg-white px-4 py-2 text-sm text-zinc-700 focus:outline-none focus:ring-2 focus:ring-pink-500"
       />
       <input
         type="date"
         value={to}
         onChange={(e) => setTo(e.target.value)}
-        className="rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white"
+        placeholder="To date"
+        className="rounded-md border border-zinc-300 bg-white px-4 py-2 text-sm text-zinc-700 focus:outline-none focus:ring-2 focus:ring-pink-500"
       />
-      <button type="submit" className="rounded-md bg-pink-500 px-4 py-2 text-sm font-medium text-white hover:bg-pink-600">
-        Search
+      <button type="submit" className="rounded-md bg-pink-500 px-6 py-2 text-sm font-medium text-white hover:bg-pink-600 transition">
+        Apply Filters
+      </button>
+      <button type="button" onClick={handleClear} className="rounded-md border border-zinc-300 bg-white px-6 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100 transition">
+        Clear
       </button>
     </form>
   )

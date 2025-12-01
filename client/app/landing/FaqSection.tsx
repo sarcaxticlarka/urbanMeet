@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -32,7 +33,7 @@ const faqs = [
     question: "Do you support online meetups?",
     answer:
       "Yes, you can host both in‑person and online meetups by adding links to your preferred video platform in the event details.",
-   bg: "bg-red-200",
+    bg: "bg-red-200",
   },
 ];
 
@@ -44,7 +45,7 @@ export default function FaqSection() {
       <div className="max-w-4xl w-full mx-auto flex flex-col items-center relative mb-8">
         <div className="absolute -left-32 top-0 hidden md:block">
           <Image
-            src="/assets/faq-left.png"
+            src="/assets/heart.png"
             alt="FAQ Left Illustration"
             width={160}
             height={160}
@@ -54,7 +55,7 @@ export default function FaqSection() {
         </div>
         <div className="absolute -right-32 top-0 hidden md:block">
           <Image
-            src="/assets/faq-right.png"
+            src="/assets/heart.png"
             alt="FAQ Right Illustration"
             width={160}
             height={160}
@@ -69,6 +70,7 @@ export default function FaqSection() {
           Find quick answers to your common questions.
         </p>
       </div>
+
       <div className="w-full max-w-4xl flex flex-col gap-6 z-10">
         {faqs.map((faq, idx) => (
           <div key={faq.question}>
@@ -104,6 +106,13 @@ export default function FaqSection() {
           </div>
         ))}
       </div>
+
+      <div className="mt-10">
+        <Link href="/auth/register" className="inline-block px-6 py-3 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition">
+          Create your free account
+        </Link>
+      </div>
+
       <style jsx>{`
         @keyframes fadeIn {
           from {

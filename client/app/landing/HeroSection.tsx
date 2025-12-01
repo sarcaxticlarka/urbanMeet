@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -47,12 +48,12 @@ export default function HeroSection() {
           Discover and host meetups where people learn new skills, share interests, and grow together.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-md shadow transition">
+          <Link href="/auth/register" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-md shadow transition">
             Get Started for Free
-          </button>
-          <button className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-md shadow transition">
+          </Link>
+          <Link href="/events" className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-md shadow transition">
             Explore Events
-          </button>
+          </Link>
         </div>
         <div className="text-gray-500 text-sm mb-4">
           Join 100+ groups already hosting meetups and events

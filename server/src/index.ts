@@ -6,6 +6,8 @@ import userRoutes from './routes/users'
 import groupRoutes from './routes/groups'
 import eventRoutes from './routes/events'
 import commentRoutes from './routes/comments'
+import notificationRoutes from './routes/notifications'
+import searchRoutes from './routes/search'
 import prisma from './prisma'
 
 dotenv.config()
@@ -20,7 +22,11 @@ app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/groups', groupRoutes)
 app.use('/api/events', eventRoutes)
-app.use('/api', commentRoutes) // comments endpoints under /api/:eventId/comments
+app.use('/api/notifications', notificationRoutes)
+// Nest comments under events: /api/events/:eventId/comments
+app.use('/api/events', commentRoutes)
+// Unified cross-entity search endpoint
+app.use('/api/search', searchRoutes)
 
 const port = Number(process.env.PORT || 4000)
 app.listen(port, () => {

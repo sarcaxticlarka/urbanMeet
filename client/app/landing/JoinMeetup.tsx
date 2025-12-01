@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function JoinMeetup() {
   return (
@@ -28,9 +29,9 @@ export default function JoinMeetup() {
           <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-xl">
             Use UrbanMeet to meet new people, discover events you love, and grow with your community — all for free.
           </p>
-          <button className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg text-lg transition focus:outline-none">
+          <Link href="/auth/register" className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg text-lg transition focus:outline-none">
             Sign up for free
-          </button>
+          </Link>
         </div>
         {/* Right image */}
         <div className="hidden md:flex flex-1 items-end justify-center z-10">

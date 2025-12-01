@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SuperchargeCTA() {
   return (
@@ -22,9 +23,9 @@ export default function SuperchargeCTA() {
         <p className="text-gray-600 text-sm mb-8">
           Create your free account and start exploring events today.
         </p>
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded shadow text-lg transition">
+        <Link href="/auth/register" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded shadow text-lg transition">
           Join UrbanMeet 
-        </button>
+        </Link>
       </div>
       <div className="flex-1 flex items-center justify-center">
         <Image

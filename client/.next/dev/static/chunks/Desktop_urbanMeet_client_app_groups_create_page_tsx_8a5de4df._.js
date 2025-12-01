@@ -10,15 +10,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$clie
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/lib/api.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/context/AuthContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
 function CreateGroupPage() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const { isLoggedIn } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [description, setDescription] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [city, setCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
@@ -29,7 +32,7 @@ function CreateGroupPage() {
         setLoading(true);
         setError(null);
         const token = localStorage.getItem('token');
-        if (!token) {
+        if (!token || !isLoggedIn) {
             setError('Please login first');
             setLoading(false);
             return;
@@ -56,6 +59,14 @@ function CreateGroupPage() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "w-full max-w-3xl rounded-[40px] shadow-2xl bg-white ring-1 ring-zinc-200 p-8 md:p-12",
             children: [
+                !isLoggedIn && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800 font-semibold",
+                    children: "Please login first to create a group."
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
+                    lineNumber: 40,
+                    columnNumber: 11
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-col items-center gap-3 mb-8",
                     children: [
@@ -72,7 +83,7 @@ function CreateGroupPage() {
                                         d: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 46,
                                         columnNumber: 121
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -81,32 +92,32 @@ function CreateGroupPage() {
                                         r: "4"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 46,
                                         columnNumber: 174
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M23 21v-2a4 4 0 0 0-3-3.87"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 46,
                                         columnNumber: 203
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M16 3.13a4 4 0 0 1 0 7.75"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 46,
                                         columnNumber: 241
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                lineNumber: 39,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 38,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -114,7 +125,7 @@ function CreateGroupPage() {
                             children: "Create a Group"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 41,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -122,13 +133,13 @@ function CreateGroupPage() {
                             children: "Start a new community and bring people together"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 42,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                    lineNumber: 37,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -149,13 +160,13 @@ function CreateGroupPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                                lineNumber: 47,
+                                                lineNumber: 54,
                                                 columnNumber: 93
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -166,18 +177,18 @@ function CreateGroupPage() {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 48,
+                                        lineNumber: 55,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                lineNumber: 46,
+                                lineNumber: 53,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 45,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -191,13 +202,13 @@ function CreateGroupPage() {
                                             children: "*"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 59,
                                             columnNumber: 90
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -209,13 +220,13 @@ function CreateGroupPage() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 51,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -232,13 +243,13 @@ function CreateGroupPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                                lineNumber: 57,
+                                                lineNumber: 64,
                                                 columnNumber: 87
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -249,27 +260,27 @@ function CreateGroupPage() {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 65,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                                lineNumber: 56,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 55,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            disabled: loading,
+                            disabled: loading || !isLoggedIn,
                             className: "w-full rounded-xl bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 py-3 text-white font-bold shadow-lg hover:from-pink-600 hover:to-indigo-600 disabled:opacity-50 text-lg transition-all",
                             children: loading ? 'Creating...' : 'Create Group'
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 61,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -277,30 +288,31 @@ function CreateGroupPage() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                            lineNumber: 64,
+                            lineNumber: 71,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-                    lineNumber: 44,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-            lineNumber: 36,
+            lineNumber: 38,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/groups/create/page.tsx",
-        lineNumber: 35,
+        lineNumber: 37,
         columnNumber: 5
     }, this);
 }
-_s(CreateGroupPage, "InnZezOK7/dN4HxjBQ8jqnSnJ/I=", false, function() {
+_s(CreateGroupPage, "MwJobhNgAqX1Qfd7JuvZ07imDxc=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"]
     ];
 });
 _c = CreateGroupPage;

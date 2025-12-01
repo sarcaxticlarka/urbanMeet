@@ -1,8 +1,13 @@
 "use client"
-import React, { useState } from 'react'
+export const dynamic = 'force-dynamic'
+import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { useAuth } from '@/context/AuthContext'
 import API from '@/lib/api'
 
 export default function ForgotPasswordPage() {
+  const { isLoggedIn } = useAuth()
+  const router = useRouter()
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
@@ -21,6 +26,20 @@ export default function ForgotPasswordPage() {
       setLoading(false)
     }
   }
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.replace('/profile')
+    }
+  }, [isLoggedIn, router])
+
+  if (isLoggedIn) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-purple-900/30 to-black p-6">
+        <p className="text-sm text-zinc-300">Redirecting to your profile...</p>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-purple-900/30 to-black p-6">
       <div className="w-full max-w-md rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-8">

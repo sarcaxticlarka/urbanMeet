@@ -251,7 +251,7 @@ export default function TopCategories() {
   };
 
   return (
-    <section className="w-full bg-[#F5F5F5] py-16 px-20 relative overflow-x-hidden">
+    <section className="w-full bg-[#F5F5F5] py-16 px-4 md:px-20 relative overflow-x-hidden">
       {/* Subtle pattern background */}
       <div
         className="absolute inset-0 pointer-events-none z-0"
@@ -282,12 +282,12 @@ export default function TopCategories() {
           />
         </svg>
       </div>
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 ml-4 relative z-10">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 ml-4 relative z-10">
         Explore top categories
       </h2>
       <div className="relative flex items-center z-10">
         <button
-          className="absolute left-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95"
+          className="hidden md:flex absolute left-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95"
           onClick={() => scroll("left")}
           aria-label="Scroll left"
         >
@@ -308,7 +308,7 @@ export default function TopCategories() {
         </button>
         <div
           ref={scrollRef}
-          className="w-full overflow-x-auto flex gap-8 px-20 scrollbar-hide scroll-smooth py-2"
+          className="w-full overflow-x-auto flex gap-4 md:gap-8 px-2 md:px-20 scrollbar-hide scroll-smooth py-2"
           style={{
             scrollBehavior: "smooth",
             msOverflowStyle: "none",
@@ -318,11 +318,11 @@ export default function TopCategories() {
           {categories.map((cat) => (
             <div
               key={cat.title}
-              className={`min-w-[260px] max-w-[280px] h-52 bg-white rounded-3xl shadow-lg flex flex-col justify-between p-7 mr-2 ${cat.border} transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer group`}
+              className={`min-w-[200px] md:min-w-[260px] max-w-[220px] md:max-w-[280px] h-52 bg-white rounded-3xl shadow-lg flex flex-col justify-between p-5 md:p-7 mr-2 ${cat.border} transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer group`}
               tabIndex={0}
             >
               <div className="flex flex-col gap-2">
-                <span className="text-xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-200">
+                <span className="text-lg md:text-xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-200">
                   {cat.title}
                 </span>
               </div>
@@ -351,7 +351,7 @@ export default function TopCategories() {
           ))}
         </div>
         <button
-          className="absolute right-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95"
+          className="hidden md:flex absolute right-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95"
           onClick={() => scroll("right")}
           aria-label="Scroll right"
         >

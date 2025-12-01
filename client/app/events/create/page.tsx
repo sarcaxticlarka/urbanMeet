@@ -1,5 +1,7 @@
 "use client"
 import React, { useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
+import { useAuth } from '@/context/AuthContext'
 
 import { useRouter, useSearchParams } from 'next/navigation'
 import API from '@/lib/api'
@@ -11,7 +13,15 @@ import { categories as topCategories } from '@/app/landing/TopCategories';
 export default function CreateEventPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const groupId = searchParams.get('groupId') || '';
+  const [groupId, setGroupId] = useState<string>(searchParams.get('groupId') || '')
+  const { isLoggedIn } = useAuth()
+
+  // Load groups for selection (could be all groups; owner-only filtering can be added later)
+  async function fetchGroups() {
+    const res = await API.get('/groups?limit=50')
+    return res.data.groups || []
+  }
+  const { data: groups = [], isLoading: loadingGroups } = useQuery({ queryKey: ['groups-for-event'], queryFn: fetchGroups })
 
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -24,6 +34,7 @@ export default function CreateEventPage() {
   const [venue, setVenue] = useState('');
   const [address, setAddress] = useState('');
   const [capacity, setCapacity] = useState<number | ''>('');
+  const [price, setPrice] = useState<number | ''>('');
   const [imageUrl, setImageUrl] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -33,7 +44,7 @@ export default function CreateEventPage() {
     setLoading(true);
     setError(null);
     const token = localStorage.getItem('token');
-    if (!token) {
+    if (!token || !isLoggedIn) {
       setError('Please login first');
       setLoading(false);
       return;
@@ -45,7 +56,6 @@ export default function CreateEventPage() {
         categoriesToSend = [...categoriesToSend, otherCategory.trim()];
       }
       const payload: any = {
-        groupId,
         title,
         description,
         startsAt,
@@ -54,9 +64,11 @@ export default function CreateEventPage() {
         tags: tagsArray,
         categories: categoriesToSend,
       };
+      if (groupId) payload.groupId = groupId;
       if (endsAt) payload.endsAt = endsAt;
       if (address) payload.address = address;
       if (capacity !== '') payload.capacity = Number(capacity);
+      if (price !== '') payload.price = Number(price);
       if (imageUrl) payload.imageUrl = imageUrl;
 
       const res = await API.post('/events', payload);
@@ -71,6 +83,11 @@ export default function CreateEventPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 p-4">
       <div className="w-full max-w-3xl rounded-[40px] shadow-2xl bg-white ring-1 ring-zinc-200 p-8 md:p-12">
+        {!isLoggedIn && (
+          <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800 font-semibold">
+            Please login first to create an event.
+          </div>
+        )}
         <div className="flex flex-col items-center gap-3 mb-8">
           <span className="inline-flex items-center justify-center rounded-3xl bg-gradient-to-br from-pink-400 to-indigo-400 p-4 shadow-lg">
             <svg className="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -79,6 +96,19 @@ export default function CreateEventPage() {
           <p className="text-md text-zinc-500 text-center">Host something amazing for your community</p>
         </div>
         <form onSubmit={submit} className="space-y-7">
+          {/* Group selector (optional). If left empty, a group will be auto-created for the event. */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="mb-1.5 block text-sm font-medium text-indigo-700">Group</label>
+              <select value={groupId} onChange={(e) => setGroupId(e.target.value)} className="w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 font-semibold">
+                <option value="">{loadingGroups ? 'Loading groups...' : 'No group (auto-create)'}</option>
+                {groups.map((g: any) => (
+                  <option key={g.id} value={g.id}>{g.name} — {g.city}</option>
+                ))}
+              </select>
+              <p className="mt-1.5 text-xs text-zinc-500 italic">Leave blank to auto-create a group for this event</p>
+            </div>
+          </div>
           {/* ...existing code... */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="md:col-span-2">
@@ -114,6 +144,12 @@ export default function CreateEventPage() {
             <div>
               <label className="mb-1.5 block text-sm font-medium text-indigo-700">Capacity</label>
               <input type="number" value={capacity} onChange={(e) => setCapacity(e.target.value ? Number(e.target.value) : '')} placeholder="Capacity" className="w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="mb-1.5 block text-sm font-medium text-indigo-700">Price ($)</label>
+              <input type="number" step="0.01" value={price} onChange={(e) => setPrice(e.target.value ? Number(e.target.value) : '')} placeholder="0 for free events" className="w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold" />
             </div>
           </div>
           <div>
@@ -185,7 +221,7 @@ export default function CreateEventPage() {
             <label className="mb-1.5 block text-sm font-medium text-pink-600">Event Poster</label>
             <ImageUploader value={imageUrl} onChange={setImageUrl} />
           </div>
-          <button disabled={loading} className="w-full rounded-xl bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 py-3 text-white font-bold shadow-lg hover:from-pink-600 hover:to-indigo-600 disabled:opacity-50 text-lg transition-all">
+          <button disabled={loading || !isLoggedIn} className="w-full rounded-xl bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 py-3 text-white font-bold shadow-lg hover:from-pink-600 hover:to-indigo-600 disabled:opacity-50 text-lg transition-all">
             {loading ? 'Creating...' : 'Create Event'}
           </button>
           {error && <div className="rounded-lg border border-rose-200 bg-rose-50 p-3 text-sm text-rose-700 font-semibold">{error}</div>}

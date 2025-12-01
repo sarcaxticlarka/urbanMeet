@@ -25,6 +25,18 @@ const nav = [
         }, ("TURBOPACK compile-time value", void 0))
     },
     {
+        label: 'Discover',
+        href: '/discover',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "text-xl",
+            children: "�"
+        }, void 0, false, {
+            fileName: "[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx",
+            lineNumber: 14,
+            columnNumber: 49
+        }, ("TURBOPACK compile-time value", void 0))
+    },
+    {
         label: 'Feeds',
         href: '/feeds',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -32,7 +44,7 @@ const nav = [
             children: "📰"
         }, void 0, false, {
             fileName: "[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx",
-            lineNumber: 14,
+            lineNumber: 15,
             columnNumber: 43
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -41,45 +53,31 @@ const nav = [
         href: '/events',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "text-xl",
-            children: "🎫"
-        }, void 0, false, {
-            fileName: "[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx",
-            lineNumber: 15,
-            columnNumber: 44
-        }, ("TURBOPACK compile-time value", void 0)),
-        badge: 34
-    },
-    {
-        label: 'Charity',
-        href: '/charity',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "text-xl",
-            children: "🎗️"
+            children: "�"
         }, void 0, false, {
             fileName: "[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx",
             lineNumber: 16,
-            columnNumber: 47
-        }, ("TURBOPACK compile-time value", void 0)),
-        badge: 22
+            columnNumber: 44
+        }, ("TURBOPACK compile-time value", void 0))
     },
     {
-        label: 'Friends',
-        href: '/friends',
+        label: 'Groups',
+        href: '/groups',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "text-xl",
             children: "👥"
         }, void 0, false, {
             fileName: "[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx",
             lineNumber: 17,
-            columnNumber: 47
+            columnNumber: 45
         }, ("TURBOPACK compile-time value", void 0))
     },
     {
-        label: 'Community',
-        href: '/community',
+        label: 'Dashboard',
+        href: '/dashboard',
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "text-xl",
-            children: "🌐"
+            children: "📊"
         }, void 0, false, {
             fileName: "[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx",
             lineNumber: 18,
@@ -173,83 +171,236 @@ __turbopack_context__.s([
     ()=>FollowingsList
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/lib/api.ts [app-ssr] (ecmascript)");
 "use client";
 ;
-const followings = [
-    {
-        id: '1',
-        name: 'Shigeru Minamoto',
-        avatarBg: 'bg-pink-300'
-    },
-    {
-        id: '2',
-        name: 'Charlie Zaplin',
-        avatarBg: 'bg-zinc-300'
-    },
-    {
-        id: '3',
-        name: 'Pope Francisc',
-        avatarBg: 'bg-yellow-200'
-    },
-    {
-        id: '4',
-        name: 'Donald Grump',
-        avatarBg: 'bg-orange-300'
-    },
-    {
-        id: '5',
-        name: 'Elvis Parsley',
-        avatarBg: 'bg-cyan-300'
-    }
-];
+;
+;
+;
+;
 function FollowingsList() {
+    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
+    const [users, setUsers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [following, setFollowing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(new Set());
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [currentUserId, setCurrentUserId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const token = localStorage.getItem('token');
+        if (!token) {
+            setLoading(false);
+            return;
+        }
+        Promise.all([
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/users', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }),
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/users/me/following', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }),
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/users/me', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+        ]).then(([usersRes, followingRes, meRes])=>{
+            setUsers(usersRes.data.users?.slice(0, 5) || []);
+            const followingIds = new Set(followingRes.data.following?.map((u)=>u.id) || []);
+            setFollowing(followingIds);
+            setCurrentUserId(meRes.data.user?.id);
+        }).catch(()=>null).finally(()=>setLoading(false));
+    }, []);
+    const handleFollow = async (userId)=>{
+        const token = localStorage.getItem('token');
+        if (!token) return;
+        try {
+            if (following.has(userId)) {
+                await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].delete(`/users/${userId}/follow`, {
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    }
+                });
+                setFollowing((prev)=>{
+                    const newSet = new Set(prev);
+                    newSet.delete(userId);
+                    return newSet;
+                });
+            } else {
+                await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].post(`/users/${userId}/follow`, {}, {
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    }
+                });
+                setFollowing((prev)=>new Set(prev).add(userId));
+            }
+            // Refresh profile data to update following count
+            queryClient.invalidateQueries({
+                queryKey: [
+                    'userProfile'
+                ]
+            });
+            // Refetch following list
+            const followingRes = await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/users/me/following', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            const followingIds = new Set(followingRes.data.following?.map((u)=>u.id) || []);
+            setFollowing(followingIds);
+        } catch (err) {
+            console.error('Follow error:', err);
+            alert(err?.response?.data?.error || 'Failed to follow/unfollow');
+        }
+    };
+    if (loading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                    className: "mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-500",
+                    children: "Discover Users"
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                    lineNumber: 77,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-xs text-zinc-400",
+                    children: "Loading..."
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                    lineNumber: 78,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+            lineNumber: 76,
+            columnNumber: 7
+        }, this);
+    }
+    // Filter out current user
+    const filteredUsers = users.filter((u)=>u.id !== currentUserId);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "mt-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                 className: "mb-3 text-xs font-semibold uppercase tracking-wide text-zinc-500",
-                children: "Followings"
+                children: "Discover Users"
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
-                lineNumber: 21,
+                lineNumber: 88,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                className: "space-y-2",
-                children: followings.map((f)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "flex items-center gap-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `h-9 w-9 rounded-xl ${f.avatarBg} flex items-center justify-center text-xs font-bold text-zinc-800 shadow-sm`,
-                                children: f.name.split(' ').map((p)=>p[0]).slice(0, 2).join('')
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
-                                lineNumber: 25,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "truncate text-sm text-zinc-700",
-                                children: f.name
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, f.id, true, {
-                        fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
-                        lineNumber: 24,
-                        columnNumber: 11
-                    }, this))
+            filteredUsers.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-xs text-zinc-400",
+                children: "No users to show"
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, this)
+                lineNumber: 90,
+                columnNumber: 9
+            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                        className: "space-y-2",
+                        children: filteredUsers.map((user)=>{
+                            const isFollowing = following.has(user.id);
+                            const initials = user.name?.split(' ').map((p)=>p[0]).slice(0, 2).join('') || 'U';
+                            const bgColors = [
+                                'bg-pink-300',
+                                'bg-zinc-300',
+                                'bg-yellow-200',
+                                'bg-orange-300',
+                                'bg-cyan-300',
+                                'bg-purple-300',
+                                'bg-green-300'
+                            ];
+                            const randomBg = bgColors[Math.abs(user.id.split('').reduce((a, c)=>a + c.charCodeAt(0), 0)) % bgColors.length];
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "flex items-center gap-2 group",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2 flex-1 min-w-0",
+                                        children: [
+                                            user.avatarUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: user.avatarUrl,
+                                                alt: user.name,
+                                                className: "h-9 w-9 rounded-xl object-cover shadow-sm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 23
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: `h-9 w-9 rounded-xl ${randomBg} flex items-center justify-center text-xs font-bold text-zinc-800 shadow-sm`,
+                                                children: initials
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                                lineNumber: 106,
+                                                columnNumber: 23
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex-1 min-w-0",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "block truncate text-sm text-zinc-700 font-medium",
+                                                    children: user.name || 'User'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                                    lineNumber: 111,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                                lineNumber: 110,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                        lineNumber: 102,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>handleFollow(user.id),
+                                        className: `px-3 py-1 rounded-lg text-xs font-medium transition-colors ${isFollowing ? 'bg-zinc-200 text-zinc-700 hover:bg-zinc-300' : 'bg-pink-500 text-white hover:bg-pink-600'}`,
+                                        children: isFollowing ? 'Following' : 'Follow'
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                        lineNumber: 114,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, user.id, true, {
+                                fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                                lineNumber: 101,
+                                columnNumber: 17
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                        lineNumber: 93,
+                        columnNumber: 11
+                    }, this),
+                    users.length > 5 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/discover",
+                        className: "mt-3 block text-center text-xs font-medium text-pink-600 hover:text-pink-700 transition",
+                        children: "Discover more →"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
+                        lineNumber: 129,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx",
-        lineNumber: 20,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }
@@ -852,6 +1003,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/@tanstack/react-query/build/modern/useQuery.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/lib/api.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/components/profile/Sidebar.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$FollowingsList$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/components/profile/FollowingsList.tsx [app-ssr] (ecmascript)");
@@ -873,8 +1026,26 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$clie
 ;
 ;
 ;
+;
+async function fetchUserProfile() {
+    const token = localStorage.getItem('token');
+    if (!token) return null;
+    const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/users/me', {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    });
+    return res.data.user;
+}
 function ProfilePage() {
-    const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
+    const { data: user, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
+        queryKey: [
+            'userProfile'
+        ],
+        queryFn: fetchUserProfile,
+        staleTime: 30000 // Refetch every 30 seconds
+    });
     const [events, setEvents] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [editing, setEditing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
@@ -882,29 +1053,24 @@ function ProfilePage() {
     const [city, setCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
     const [avatarUrl, setAvatarUrl] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(undefined);
     const [coverUrl, setCoverUrl] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(undefined);
-    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const token = localStorage.getItem('token');
-        if (!token) return;
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/users/me', {
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
-        }).then((r)=>{
-            setUser(r.data.user);
-            setName(r.data.user.name || '');
-            setBio(r.data.user.bio || '');
-            setCity(r.data.user.city || '');
-            setAvatarUrl(r.data.user.avatarUrl || undefined);
-            setCoverUrl(r.data.user.coverUrl || undefined);
-            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/events?owner=${r.data.user.id}`);
-        }).then((r)=>setEvents(r?.data?.events || [])).catch(()=>null).finally(()=>setLoading(false));
-    }, []);
+        if (user) {
+            setName(user.name || '');
+            setBio(user.bio || '');
+            setCity(user.city || '');
+            setAvatarUrl(user.avatarUrl || undefined);
+            setCoverUrl(user.coverUrl || undefined);
+            // Fetch user events
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/events?owner=${user.id}`).then((r)=>setEvents(r?.data?.events || [])).catch(()=>null);
+        }
+    }, [
+        user
+    ]);
     const handleSave = async ()=>{
         const token = localStorage.getItem('token');
         if (!token) return;
         try {
-            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].patch('/users/me', {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].patch('/users/me', {
                 name,
                 bio,
                 city,
@@ -915,7 +1081,11 @@ function ProfilePage() {
                     Authorization: `Bearer ${token}`
                 }
             });
-            setUser(res.data.user);
+            queryClient.invalidateQueries({
+                queryKey: [
+                    'userProfile'
+                ]
+            });
             setEditing(false);
         } catch  {
             alert('Failed to update profile');
@@ -926,7 +1096,7 @@ function ProfilePage() {
         children: "Please login to view your profile."
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-        lineNumber: 54,
+        lineNumber: 63,
         columnNumber: 21
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -939,18 +1109,18 @@ function ProfilePage() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Sidebar"], {}, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 61,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$FollowingsList$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FollowingsList"], {}, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 62,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                    lineNumber: 60,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -965,12 +1135,12 @@ function ProfilePage() {
                             coverUrl: coverUrl
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 66,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$TabsBar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TabsBar"], {}, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 74,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this),
                         editing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -986,7 +1156,7 @@ function ProfilePage() {
                                             className: "rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -996,7 +1166,7 @@ function ProfilePage() {
                                             className: "rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 89,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1007,7 +1177,7 @@ function ProfilePage() {
                                             className: "md:col-span-3 rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1017,12 +1187,12 @@ function ProfilePage() {
                                                 onChange: setAvatarUrl
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 91,
                                                 columnNumber: 48
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 91,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1032,18 +1202,18 @@ function ProfilePage() {
                                                 onChange: setCoverUrl
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 92,
                                                 columnNumber: 48
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 92,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 87,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1055,7 +1225,7 @@ function ProfilePage() {
                                             children: "Save"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 95,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1064,19 +1234,19 @@ function ProfilePage() {
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 96,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 77,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this),
                         !editing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1087,12 +1257,12 @@ function ProfilePage() {
                                 children: "Edit Profile"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                lineNumber: 93,
+                                lineNumber: 102,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 92,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1103,10 +1273,10 @@ function ProfilePage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "text-lg font-semibold text-zinc-900",
-                                            children: "Events"
+                                            children: "Your Events"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 108,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1118,7 +1288,7 @@ function ProfilePage() {
                                                     children: "+ Create Group"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 110,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1127,19 +1297,19 @@ function ProfilePage() {
                                                     children: "Create Event →"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 111,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 109,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 107,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1147,10 +1317,21 @@ function ProfilePage() {
                                     children: [
                                         events.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-2xl bg-white shadow-sm ring-1 ring-zinc-200 p-6 text-sm text-zinc-500",
-                                            children: "No events yet."
-                                        }, void 0, false, {
+                                            children: [
+                                                "No events yet. ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/events/create",
+                                                    className: "text-indigo-600 hover:underline",
+                                                    children: "Create one!"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
+                                                    lineNumber: 117,
+                                                    columnNumber: 34
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 116,
                                             columnNumber: 17
                                         }, this),
                                         events.map((ev)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$EventCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EventCard"], {
@@ -1160,49 +1341,36 @@ function ProfilePage() {
                                                 description: ev.description || 'No description'
                                             }, ev.id, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                                lineNumber: 110,
-                                                columnNumber: 17
-                                            }, this)),
-                                        events.length < 4 && Array.from({
-                                            length: 4 - events.length
-                                        }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$profile$2f$EventCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EventCard"], {
-                                                id: `placeholder-${i}`,
-                                                title: `Sample Event ${i + 1}`,
-                                                location: "Central Park, NYC",
-                                                description: "Colorful cultural festival and market",
-                                                accent: "from-cyan-400 to-pink-500"
-                                            }, `ph-${i}`, false, {
-                                                fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                                lineNumber: 114,
+                                                lineNumber: 121,
                                                 columnNumber: 17
                                             }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                            lineNumber: 97,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-                    lineNumber: 65,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-            lineNumber: 58,
+            lineNumber: 67,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
-        lineNumber: 57,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }

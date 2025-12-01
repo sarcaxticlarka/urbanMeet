@@ -1,10 +1,13 @@
 "use client"
+export const dynamic = 'force-dynamic'
 import React, { useState, useEffect } from 'react'
+import { useAuth } from '@/context/AuthContext'
 import { useRouter } from 'next/navigation'
 import API from '@/lib/api'
 
 export default function ResetPasswordPage({ params }: { params: { token: string } }) {
   const router = useRouter()
+  const { isLoggedIn } = useAuth()
   const { token } = params
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
@@ -26,6 +29,12 @@ export default function ResetPasswordPage({ params }: { params: { token: string 
     return () => controller.abort()
   }, [password])
 
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.replace('/profile')
+    }
+  }, [isLoggedIn, router])
+
   const submit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
@@ -42,6 +51,14 @@ export default function ResetPasswordPage({ params }: { params: { token: string 
     } finally {
       setLoading(false)
     }
+  }
+
+  if (isLoggedIn) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-purple-900/30 to-black p-6">
+        <p className="text-sm text-zinc-300">Redirecting to your profile...</p>
+      </div>
+    )
   }
 
   return (

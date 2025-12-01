@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import API from '@/lib/api'
 import { Sidebar } from '@/components/profile/Sidebar'
 import { FollowingsList } from '@/components/profile/FollowingsList'
@@ -10,8 +11,20 @@ import { TabsBar } from '@/components/profile/TabsBar'
 import { EventCard } from '@/components/profile/EventCard'
 import Link from 'next/link'
 
+async function fetchUserProfile() {
+  const token = localStorage.getItem('token')
+  if (!token) return null
+  const res = await API.get('/users/me', { headers: { Authorization: `Bearer ${token}` } })
+  return res.data.user
+}
+
 export default function ProfilePage() {
-  const [user, setUser] = useState<any>(null)
+  const queryClient = useQueryClient()
+  const { data: user, isLoading } = useQuery({ 
+    queryKey: ['userProfile'], 
+    queryFn: fetchUserProfile,
+    staleTime: 30000 // Refetch every 30 seconds
+  })
   const [events, setEvents] = useState<any[]>([])
   const [editing, setEditing] = useState(false)
   const [name, setName] = useState('')
@@ -19,32 +32,28 @@ export default function ProfilePage() {
   const [city, setCity] = useState('')
   const [avatarUrl, setAvatarUrl] = useState<string | undefined>(undefined)
   const [coverUrl, setCoverUrl] = useState<string | undefined>(undefined)
-  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const token = localStorage.getItem('token')
-    if (!token) return
-    API.get('/users/me', { headers: { Authorization: `Bearer ${token}` } })
-      .then(r => {
-        setUser(r.data.user)
-        setName(r.data.user.name || '')
-        setBio(r.data.user.bio || '')
-        setCity(r.data.user.city || '')
-        setAvatarUrl(r.data.user.avatarUrl || undefined)
-        setCoverUrl(r.data.user.coverUrl || undefined)
-        return API.get(`/events?owner=${r.data.user.id}`)
-      })
-      .then(r => setEvents(r?.data?.events || []))
-      .catch(()=>null)
-      .finally(()=>setLoading(false))
-  }, [])
+    if (user) {
+      setName(user.name || '')
+      setBio(user.bio || '')
+      setCity(user.city || '')
+      setAvatarUrl(user.avatarUrl || undefined)
+      setCoverUrl(user.coverUrl || undefined)
+      
+      // Fetch user events
+      API.get(`/events?owner=${user.id}`)
+        .then(r => setEvents(r?.data?.events || []))
+        .catch(() => null)
+    }
+  }, [user])
 
   const handleSave = async () => {
     const token = localStorage.getItem('token')
     if (!token) return
     try {
-      const res = await API.patch('/users/me', { name, bio, city, avatarUrl, coverUrl }, { headers: { Authorization: `Bearer ${token}` } })
-      setUser(res.data.user)
+      await API.patch('/users/me', { name, bio, city, avatarUrl, coverUrl }, { headers: { Authorization: `Bearer ${token}` } })
+      queryClient.invalidateQueries({ queryKey: ['userProfile'] })
       setEditing(false)
     } catch {
       alert('Failed to update profile')
@@ -96,7 +105,7 @@ export default function ProfilePage() {
           {/* Events grid */}
           <div className="space-y-4">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-semibold text-zinc-900">Events</h2>
+              <h2 className="text-lg font-semibold text-zinc-900">Your Events</h2>
               <div className="flex gap-2">
                 <Link href="/groups/create" className="rounded-xl bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 text-sm text-white font-semibold shadow hover:from-pink-600 hover:to-purple-600">+ Create Group</Link>
                 <Link href="/events/create" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">Create Event →</Link>
@@ -104,14 +113,12 @@ export default function ProfilePage() {
             </div>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {events.length === 0 && (
-                <div className="rounded-2xl bg-white shadow-sm ring-1 ring-zinc-200 p-6 text-sm text-zinc-500">No events yet.</div>
+                <div className="rounded-2xl bg-white shadow-sm ring-1 ring-zinc-200 p-6 text-sm text-zinc-500">
+                  No events yet. <Link href="/events/create" className="text-indigo-600 hover:underline">Create one!</Link>
+                </div>
               )}
               {events.map(ev => (
                 <EventCard key={ev.id} id={ev.id} title={ev.title} location={ev.city || 'Unknown'} description={ev.description || 'No description'} />
-              ))}
-              {/* Placeholder sample cards if less than 4 */}
-              {events.length < 4 && Array.from({length: 4 - events.length}).map((_,i)=>(
-                <EventCard key={`ph-${i}`} id={`placeholder-${i}`} title={`Sample Event ${i+1}`} location="Central Park, NYC" description="Colorful cultural festival and market" accent="from-cyan-400 to-pink-500" />
               ))}
             </div>
           </div>

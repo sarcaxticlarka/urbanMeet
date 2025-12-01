@@ -8,12 +8,65 @@ const router = Router()
 router.get('/', async (req, res) => {
   const { city, search, page = '1', limit = '20' } = req.query as any
   const where: any = {}
+
   if (city) where.city = String(city)
-  if (search) where.OR = [{ name: { contains: String(search), mode: 'insensitive' } }, { description: { contains: String(search), mode: 'insensitive' } }]
+
+  // Enhanced multi-token search across name, description, city
+  if (search) {
+    const raw = String(search).trim()
+    const tokens = raw.split(/\s+/).filter(Boolean)
+    const orConditions: any[] = []
+    tokens.forEach(tok => {
+      orConditions.push(
+        { name: { contains: tok } },
+        { description: { contains: tok } },
+        { city: { contains: tok } }
+      )
+    })
+    // Full phrase matches
+    orConditions.push(
+      { name: { contains: raw } },
+      { description: { contains: raw } },
+      { city: { contains: raw } }
+    )
+    where.OR = orConditions
+  }
+
   const take = Math.min(100, Number(limit) || 20)
   const skip = (Number(page) - 1) * take
-  const groups = await prisma.group.findMany({ where, skip, take, include: { owner: true, members: true } })
-  res.json({ groups })
+  // Get total count for pagination
+  const total = await prisma.group.count({ where })
+  let groups = await prisma.group.findMany({ where, skip, take, include: { owner: true, members: true } })
+
+  // Fallback related groups if search provided and no matches
+  let relatedGroups: any[] | undefined = undefined
+  if (search && groups.length === 0) {
+    const firstTok = String(search).trim().split(/\s+/)[0]
+    if (firstTok) {
+      relatedGroups = await prisma.group.findMany({
+        where: {
+          OR: [
+            { name: { contains: firstTok } },
+            { description: { contains: firstTok } },
+            { city: { contains: firstTok } }
+          ]
+        },
+        take: 10,
+        include: { owner: true, members: true }
+      })
+    }
+  }
+
+  res.json({
+    groups,
+    relatedGroups,
+    pagination: {
+      total,
+      page: Number(page),
+      limit: take,
+      totalPages: Math.ceil(total / take)
+    }
+  })
 })
 
 router.get('/:id', async (req, res) => {
@@ -64,6 +117,31 @@ router.post('/:id/leave', requireAuth, async (req: AuthRequest, res) => {
   const { id } = req.params
   const userId = req.user.id
   await prisma.groupMember.delete({ where: { userId_groupId: { userId, groupId: id } } }).catch(() => null)
+  res.json({ ok: true })
+})
+
+// Follow a group: if not a member, create a membership with role 'follower'
+router.post('/:id/follow', requireAuth, async (req: AuthRequest, res) => {
+  const { id } = req.params
+  const userId = req.user.id
+  const existing = await prisma.groupMember.findUnique({ where: { userId_groupId: { userId, groupId: id } } }).catch(() => null)
+  if (existing) {
+    // if already a member, no change; following is implied
+    return res.json({ member: existing })
+  }
+  const follower = await prisma.groupMember.create({ data: { userId, groupId: id, role: 'follower' } })
+  res.json({ follower })
+})
+
+// Unfollow a group: if role is follower (not member/admin), remove entry; otherwise keep membership
+router.post('/:id/unfollow', requireAuth, async (req: AuthRequest, res) => {
+  const { id } = req.params
+  const userId = req.user.id
+  const existing = await prisma.groupMember.findUnique({ where: { userId_groupId: { userId, groupId: id } } }).catch(() => null)
+  if (!existing) return res.json({ ok: true })
+  if (existing.role === 'follower') {
+    await prisma.groupMember.delete({ where: { userId_groupId: { userId, groupId: id } } })
+  }
   res.json({ ok: true })
 })
 

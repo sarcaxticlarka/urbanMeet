@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   "Discover meetups that match your interests",
@@ -18,6 +19,10 @@ export default function CustomerSuccess() {
         <p className="text-gray-600 text-lg mb-8 max-w-xl">
           UrbanMeet helps you run better meetups, create meaningful connections, and grow thriving communities.
         </p>
+        <div className="flex flex-col sm:flex-row gap-3 mb-6">
+          <Link href="/discover" className="px-5 py-3 rounded-md bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">Discover People</Link>
+          <Link href="/groups" className="px-5 py-3 rounded-md bg-white text-gray-900 font-semibold border border-gray-300 hover:bg-gray-50 transition">Browse Groups</Link>
+        </div>
         <ul className="space-y-6 w-full max-w-xl">
           {features.map((feature) => (
             <li

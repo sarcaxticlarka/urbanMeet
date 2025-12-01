@@ -17,15 +17,16 @@ function ImageUploader({ onChange, value }) {
     _s();
     const [uploading, setUploading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const cloudName = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
-    const uploadPreset = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
+    const [fileName, setFileName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('No file chosen');
+    const inputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const cloudName = ("TURBOPACK compile-time value", "dktaam6yi");
+    const uploadPreset = ("TURBOPACK compile-time value", "urban_meet");
     const handleFile = async (e)=>{
         const file = e.target.files?.[0];
         if (!file) return;
-        if (!cloudName || !uploadPreset) {
-            setError('Cloudinary env vars missing');
-            return;
-        }
+        setFileName(file.name);
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
         setUploading(true);
         setError(null);
         try {
@@ -52,31 +53,88 @@ function ImageUploader({ onChange, value }) {
         className: "space-y-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-3",
+                className: "flex flex-wrap items-center gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        ref: inputRef,
+                        id: "event-poster-input",
                         type: "file",
                         accept: "image/*",
                         onChange: handleFile,
                         disabled: uploading,
-                        className: "text-sm text-white"
+                        className: "hidden"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-                        lineNumber: 48,
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>inputRef.current?.click(),
+                        disabled: uploading,
+                        className: "inline-flex items-center gap-2 rounded-lg border-2 border-pink-300 bg-white px-4 py-2 text-sm font-semibold text-pink-700 hover:bg-pink-50 disabled:opacity-60",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                className: "h-4 w-4",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                strokeWidth: "2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 106
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M7 9l5-5 5 5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 159
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M12 4v12"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 183
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
+                                lineNumber: 66,
+                                columnNumber: 11
+                            }, this),
+                            "Choose image"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-sm text-zinc-600",
+                        children: fileName
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     uploading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-xs text-pink-300 animate-pulse",
+                        className: "text-xs text-pink-600 animate-pulse",
                         children: "Uploading..."
                     }, void 0, false, {
                         fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-                        lineNumber: 49,
+                        lineNumber: 70,
                         columnNumber: 23
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-                lineNumber: 47,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             value && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -85,7 +143,7 @@ function ImageUploader({ onChange, value }) {
                 className: "h-40 w-full object-cover rounded-xl border border-white/10"
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-                lineNumber: 52,
+                lineNumber: 73,
                 columnNumber: 9
             }, this),
             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -93,7 +151,7 @@ function ImageUploader({ onChange, value }) {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-                lineNumber: 54,
+                lineNumber: 75,
                 columnNumber: 17
             }, this),
             !cloudName && !uploadPreset && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -101,17 +159,17 @@ function ImageUploader({ onChange, value }) {
                 children: "Set NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME and NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET to enable uploads."
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-                lineNumber: 56,
+                lineNumber: 77,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx",
-        lineNumber: 46,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
-_s(ImageUploader, "/2HewAiKOOl3edvvi6+niArN5Ig=");
+_s(ImageUploader, "V0w7vPkvFl/9T76OcHvsZqnrF2c=");
 _c = ImageUploader;
 var _c;
 __turbopack_context__.k.register(_c, "ImageUploader");
@@ -624,7 +682,7 @@ function TopCategories() {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "w-full bg-[#F5F5F5] py-16 px-20 relative overflow-x-hidden",
+        className: "w-full bg-[#F5F5F5] py-16 px-4 md:px-20 relative overflow-x-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 pointer-events-none z-0",
@@ -688,7 +746,7 @@ function TopCategories() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "text-3xl md:text-4xl font-bold mb-10 ml-4 relative z-10",
+                className: "text-2xl md:text-3xl lg:text-4xl font-bold mb-10 ml-4 relative z-10",
                 children: "Explore top categories"
             }, void 0, false, {
                 fileName: "[project]/Desktop/urbanMeet/client/app/landing/TopCategories.tsx",
@@ -699,7 +757,7 @@ function TopCategories() {
                 className: "relative flex items-center z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "absolute left-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95",
+                        className: "hidden md:flex absolute left-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95",
                         onClick: ()=>scroll("left"),
                         "aria-label": "Scroll left",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -730,20 +788,20 @@ function TopCategories() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         ref: scrollRef,
-                        className: "w-full overflow-x-auto flex gap-8 px-20 scrollbar-hide scroll-smooth py-2",
+                        className: "w-full overflow-x-auto flex gap-4 md:gap-8 px-2 md:px-20 scrollbar-hide scroll-smooth py-2",
                         style: {
                             scrollBehavior: "smooth",
                             msOverflowStyle: "none",
                             scrollbarWidth: "none"
                         },
                         children: categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `min-w-[260px] max-w-[280px] h-52 bg-white rounded-3xl shadow-lg flex flex-col justify-between p-7 mr-2 ${cat.border} transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer group`,
+                                className: `min-w-[200px] md:min-w-[260px] max-w-[220px] md:max-w-[280px] h-52 bg-white rounded-3xl shadow-lg flex flex-col justify-between p-5 md:p-7 mr-2 ${cat.border} transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer group`,
                                 tabIndex: 0,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-col gap-2",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-200",
+                                            className: "text-lg md:text-xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-200",
                                             children: cat.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/landing/TopCategories.tsx",
@@ -812,7 +870,7 @@ function TopCategories() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "absolute right-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95",
+                        className: "hidden md:flex absolute right-0 z-20 bg-gray-900 text-white w-12 h-12 rounded-full items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition-all duration-200 active:scale-95",
                         onClick: ()=>scroll("right"),
                         "aria-label": "Scroll right",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -871,6 +929,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/@tanstack/react-query/build/modern/useQuery.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/context/AuthContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/lib/api.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$ImageUploader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/urbanMeet/client/components/ImageUploader.tsx [app-client] (ecmascript)");
@@ -883,11 +943,25 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
+;
 function CreateEventPage() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
-    const groupId = searchParams.get('groupId') || '';
+    const [groupId, setGroupId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(searchParams.get('groupId') || '');
+    const { isLoggedIn } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
+    // Load groups for selection (could be all groups; owner-only filtering can be added later)
+    async function fetchGroups() {
+        const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get('/groups?limit=50');
+        return res.data.groups || [];
+    }
+    const { data: groups = [], isLoading: loadingGroups } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])({
+        queryKey: [
+            'groups-for-event'
+        ],
+        queryFn: fetchGroups
+    });
     const [title, setTitle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [description, setDescription] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [selectedCategories, setSelectedCategories] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -899,6 +973,7 @@ function CreateEventPage() {
     const [venue, setVenue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [address, setAddress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [capacity, setCapacity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [price, setPrice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [imageUrl, setImageUrl] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -907,7 +982,7 @@ function CreateEventPage() {
         setLoading(true);
         setError(null);
         const token = localStorage.getItem('token');
-        if (!token) {
+        if (!token || !isLoggedIn) {
             setError('Please login first');
             setLoading(false);
             return;
@@ -922,7 +997,6 @@ function CreateEventPage() {
                 ];
             }
             const payload = {
-                groupId,
                 title,
                 description,
                 startsAt,
@@ -931,9 +1005,11 @@ function CreateEventPage() {
                 tags: tagsArray,
                 categories: categoriesToSend
             };
+            if (groupId) payload.groupId = groupId;
             if (endsAt) payload.endsAt = endsAt;
             if (address) payload.address = address;
             if (capacity !== '') payload.capacity = Number(capacity);
+            if (price !== '') payload.price = Number(price);
             if (imageUrl) payload.imageUrl = imageUrl;
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post('/events', payload);
             router.push(`/events/${res.data.event.id}`);
@@ -948,6 +1024,14 @@ function CreateEventPage() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "w-full max-w-3xl rounded-[40px] shadow-2xl bg-white ring-1 ring-zinc-200 p-8 md:p-12",
             children: [
+                !isLoggedIn && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800 font-semibold",
+                    children: "Please login first to create an event."
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                    lineNumber: 87,
+                    columnNumber: 11
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-col items-center gap-3 mb-8",
                     children: [
@@ -969,7 +1053,7 @@ function CreateEventPage() {
                                         ry: "2"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 93,
                                         columnNumber: 121
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -979,7 +1063,7 @@ function CreateEventPage() {
                                         y2: "6"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 93,
                                         columnNumber: 177
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -989,7 +1073,7 @@ function CreateEventPage() {
                                         y2: "6"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 93,
                                         columnNumber: 214
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -999,18 +1083,18 @@ function CreateEventPage() {
                                         y2: "10"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 93,
                                         columnNumber: 249
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                lineNumber: 76,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 75,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1018,7 +1102,7 @@ function CreateEventPage() {
                             children: "Create an Event"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 78,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1026,19 +1110,81 @@ function CreateEventPage() {
                             children: "Host something amazing for your community"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 79,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                    lineNumber: 74,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                     onSubmit: submit,
                     className: "space-y-7",
                     children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "mb-1.5 block text-sm font-medium text-indigo-700",
+                                        children: "Group"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                        lineNumber: 102,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                        value: groupId,
+                                        onChange: (e)=>setGroupId(e.target.value),
+                                        className: "w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 font-semibold",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "",
+                                                children: loadingGroups ? 'Loading groups...' : 'No group (auto-create)'
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 17
+                                            }, this),
+                                            groups.map((g)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: g.id,
+                                                    children: [
+                                                        g.name,
+                                                        " — ",
+                                                        g.city
+                                                    ]
+                                                }, g.id, true, {
+                                                    fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                                    lineNumber: 106,
+                                                    columnNumber: 19
+                                                }, this))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                        lineNumber: 103,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-1.5 text-xs text-zinc-500 italic",
+                                        children: "Leave blank to auto-create a group for this event"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                        lineNumber: 109,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                lineNumber: 101,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                            lineNumber: 100,
+                            columnNumber: 11
+                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-1 md:grid-cols-2 gap-6",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1053,13 +1199,13 @@ function CreateEventPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 115,
                                                 columnNumber: 94
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 115,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1070,18 +1216,18 @@ function CreateEventPage() {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 116,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                lineNumber: 84,
+                                lineNumber: 114,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 83,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1098,13 +1244,13 @@ function CreateEventPage() {
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                                    lineNumber: 91,
+                                                    lineNumber: 121,
                                                     columnNumber: 92
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1115,13 +1261,13 @@ function CreateEventPage() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 122,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 120,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1131,7 +1277,7 @@ function CreateEventPage() {
                                             children: "Ends At"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 125,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1141,19 +1287,19 @@ function CreateEventPage() {
                                             className: "w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 font-semibold"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 126,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 89,
+                            lineNumber: 119,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1170,13 +1316,13 @@ function CreateEventPage() {
                                                     children: "*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 131,
                                                     columnNumber: 87
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 101,
+                                            lineNumber: 131,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1187,13 +1333,13 @@ function CreateEventPage() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 132,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 130,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1203,7 +1349,7 @@ function CreateEventPage() {
                                             children: "Venue"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 135,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1213,19 +1359,19 @@ function CreateEventPage() {
                                             className: "w-full rounded-xl border-2 border-pink-200 bg-pink-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 136,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 99,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1238,7 +1384,7 @@ function CreateEventPage() {
                                             children: "Address"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 141,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1248,13 +1394,13 @@ function CreateEventPage() {
                                             className: "w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 142,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 140,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1264,7 +1410,7 @@ function CreateEventPage() {
                                             children: "Capacity"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 145,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1275,19 +1421,54 @@ function CreateEventPage() {
                                             className: "w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 144,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 109,
+                            lineNumber: 139,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        className: "mb-1.5 block text-sm font-medium text-indigo-700",
+                                        children: "Price ($)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                        lineNumber: 151,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "number",
+                                        step: "0.01",
+                                        value: price,
+                                        onChange: (e)=>setPrice(e.target.value ? Number(e.target.value) : ''),
+                                        placeholder: "0 for free events",
+                                        className: "w-full rounded-xl border-2 border-indigo-200 bg-indigo-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                        lineNumber: 152,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                                lineNumber: 150,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1297,7 +1478,7 @@ function CreateEventPage() {
                                     children: "Tags (comma separated)"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 156,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1307,13 +1488,13 @@ function CreateEventPage() {
                                     className: "w-full rounded-xl border-2 border-pink-200 bg-pink-50 py-3 px-4 text-zinc-900 placeholder:text-zinc-400 font-semibold"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 119,
+                            lineNumber: 155,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1327,13 +1508,13 @@ function CreateEventPage() {
                                             children: "*"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 160,
                                             columnNumber: 96
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 160,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1345,13 +1526,13 @@ function CreateEventPage() {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 161,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 123,
+                            lineNumber: 159,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1366,13 +1547,13 @@ function CreateEventPage() {
                                             children: "*"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 164,
                                             columnNumber: 108
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 164,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1414,7 +1595,7 @@ function CreateEventPage() {
                                                 children: cat.title
                                             }, cat.title, false, {
                                                 fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 187,
                                                 columnNumber: 19
                                             }, this);
                                         }),
@@ -1428,7 +1609,7 @@ function CreateEventPage() {
                                             children: "Other (type specific)"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 166,
+                                            lineNumber: 202,
                                             columnNumber: 15
                                         }, this),
                                         selectedCategories.includes('__other__') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1439,19 +1620,19 @@ function CreateEventPage() {
                                             onChange: (e)=>setOtherCategory(e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 210,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 165,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 127,
+                            lineNumber: 163,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1461,7 +1642,7 @@ function CreateEventPage() {
                                     children: "Event Poster"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 221,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$components$2f$ImageUploader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1469,22 +1650,22 @@ function CreateEventPage() {
                                     onChange: setImageUrl
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                                    lineNumber: 186,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 184,
+                            lineNumber: 220,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            disabled: loading,
+                            disabled: loading || !isLoggedIn,
                             className: "w-full rounded-xl bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 py-3 text-white font-bold shadow-lg hover:from-pink-600 hover:to-indigo-600 disabled:opacity-50 text-lg transition-all",
                             children: loading ? 'Creating...' : 'Create Event'
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 188,
+                            lineNumber: 224,
                             columnNumber: 11
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1492,31 +1673,33 @@ function CreateEventPage() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                            lineNumber: 191,
+                            lineNumber: 227,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-                    lineNumber: 81,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-            lineNumber: 73,
+            lineNumber: 85,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/urbanMeet/client/app/events/create/page.tsx",
-        lineNumber: 72,
+        lineNumber: 84,
         columnNumber: 5
     }, this);
 }
-_s(CreateEventPage, "v6YzlmkZ34X0fGIMVgs48IWf7vg=", false, function() {
+_s(CreateEventPage, "TTfIjYe8q40MN9WdiD1tB1h54pc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"]
     ];
 });
 _c = CreateEventPage;

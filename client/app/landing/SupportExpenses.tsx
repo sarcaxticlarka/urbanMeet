@@ -176,6 +176,10 @@ export default function SupportExpenses() {
           </div>
         ))}
       </div>
+      <div className="mt-8 flex gap-4">
+        <a href="/events" className="px-6 py-3 rounded-full bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">See All Events</a>
+        <a href="/groups" className="px-6 py-3 rounded-full bg-white text-gray-900 font-semibold border border-gray-300 hover:bg-gray-50 transition">See All Groups</a>
+      </div>
     </section>
   );
 }
