@@ -59,15 +59,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
   };
 
-  const logout = () => {
+  const logout = (cb?: () => void) => {
     console.log("Logout called");
     localStorage.removeItem("token");
     setUser(null);
     setIsLoggedIn(false);
+    if (cb) cb();
   };
 
   return (
-    <AuthContext.Provider value={{ user, isLoggedIn, login, logout }}>
+  <AuthContext.Provider value={{ user, isLoggedIn, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

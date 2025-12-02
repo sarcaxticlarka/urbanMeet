@@ -29,6 +29,7 @@ export default function Navbar() {
 
   const handleLogout = () => {
     logout();
+    router.push('/');
   }
 
   const [search, setSearch] = useState(searchParams?.get('search') || '');
