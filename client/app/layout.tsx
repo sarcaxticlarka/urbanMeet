@@ -33,7 +33,15 @@ export const metadata: Metadata = {
     ]
   },
   icons: {
-    icon: "/assets/logo-light.png"
+    icon: [
+      { url: "/favicon_io 3/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon_io 3/favicon-32x32.png", sizes: "32x32", type: "image/png" }
+    ],
+    apple: "/favicon_io 3/apple-touch-icon.png",
+    other: [
+      { rel: "android-chrome-192x192", url: "/favicon_io 3/android-chrome-192x192.png" },
+      { rel: "android-chrome-512x512", url: "/favicon_io 3/android-chrome-512x512.png" }
+    ]
   }
 };
 
@@ -49,7 +57,8 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#111827" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/logo-light.png" />
+        <link rel="icon" href="/favicon_io 3/favicon.ico" />
+        <link rel="manifest" href="/favicon_io 3/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 min-h-screen`}

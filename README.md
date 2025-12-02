@@ -278,4 +278,4 @@ Comment { id, eventId, userId, content, createdAt }
 ✅ **Frontend** - Next.js 15 + React Query + Tailwind with glassmorphism  
 ✅ **Both servers running** and tested
 
-The platform is ready for demo and further enhancements! 🚀
+Live Link - https://urban-meet.vercel.app/
