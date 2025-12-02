@@ -79,7 +79,7 @@ export default function EventsPage() {
                   </div>
                   <Link
                     href="/events/create"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-rose-600 text-white px-6 py-3 font-bold text-sm hover:from-pink-700 hover:to-rose-700 transition shadow-lg w-full md:w-auto whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-pink-600 to-rose-600 text-white px-6 py-3 font-bold text-sm hover:from-pink-700 hover:to-rose-700 transition shadow-lg w-full md:w-auto whitespace-nowrap cursor-pointer"
                   >
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -124,7 +124,7 @@ export default function EventsPage() {
                           })}
                         </div>
                         <div className="mt-6">
-                          <button onClick={handleClearSearch} className="inline-flex items-center rounded-full bg-pink-600 hover:bg-pink-500 text-white text-sm font-semibold px-5 py-2 shadow">
+                          <button onClick={handleClearSearch} className="inline-flex items-center rounded-full bg-pink-600 hover:bg-pink-500 text-white text-sm font-semibold px-5 py-2 shadow cursor-pointer">
                             See all events
                           </button>
                         </div>
@@ -132,7 +132,7 @@ export default function EventsPage() {
                     ) : (
                       <div className="space-y-4">
                         <p className="text-sm text-zinc-500">Try adjusting your search filters or view all upcoming events.</p>
-                        <button onClick={handleClearSearch} className="inline-flex items-center rounded-full bg-pink-600 hover:bg-pink-500 text-white text-sm font-semibold px-5 py-2 shadow">
+                        <button onClick={handleClearSearch} className="inline-flex items-center rounded-full bg-pink-600 hover:bg-pink-500 text-white text-sm font-semibold px-5 py-2 shadow cursor-pointer">
                           See all events
                         </button>
                       </div>

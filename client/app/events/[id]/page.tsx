@@ -51,7 +51,10 @@ export default function EventPage({ params }: { params: Promise<{ id: string }> 
   const rsvpMutation = useMutation({
     mutationFn: async (status: string) => {
       const token = localStorage.getItem('token')
-      if (!token) throw new Error('Not logged in')
+      if (!token) {
+        router.push('/auth/login?redirect=/events/' + id)
+        throw new Error('Not logged in')
+      }
       await API.post(`/events/${id}/rsvp?status=${status}`, {}, { headers: { Authorization: `Bearer ${token}` } })
       return status
     },
@@ -63,7 +66,10 @@ export default function EventPage({ params }: { params: Promise<{ id: string }> 
   const commentMutation = useMutation({
     mutationFn: async (content: string) => {
       const token = localStorage.getItem('token')
-      if (!token) throw new Error('Not logged in')
+      if (!token) {
+        router.push('/auth/login?redirect=/events/' + id)
+        throw new Error('Not logged in')
+      }
       await API.post(`/events/${id}/comments`, { content }, { headers: { Authorization: `Bearer ${token}` } })
     },
     onSuccess: () => {
@@ -264,7 +270,7 @@ export default function EventPage({ params }: { params: Promise<{ id: string }> 
                   <button 
                     onClick={() => commentText && commentMutation.mutate(commentText)}
                     disabled={!commentText}
-                    className="rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white hover:bg-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                    className="rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white hover:bg-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition cursor-pointer"
                   >
                     Post
                   </button>
@@ -323,13 +329,13 @@ export default function EventPage({ params }: { params: Promise<{ id: string }> 
               <div className="space-y-3">
                 <button 
                   onClick={() => rsvpMutation.mutate('going')}
-                  className="w-full rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white hover:bg-pink-600 transition"
+                  className="w-full rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white hover:bg-pink-600 transition cursor-pointer"
                 >
                   ✓ I'm Going
                 </button>
                 <button 
                   onClick={() => rsvpMutation.mutate('interested')}
-                  className="w-full rounded-lg border-2 border-pink-500 px-6 py-3 font-semibold text-pink-600 hover:bg-pink-50 transition flex items-center justify-center gap-2"
+                  className="w-full rounded-lg border-2 border-pink-500 px-6 py-3 font-semibold text-pink-600 hover:bg-pink-50 transition flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <FaStar /> Interested
                 </button>
@@ -368,13 +374,13 @@ export default function EventPage({ params }: { params: Promise<{ id: string }> 
                   <p className="text-xs font-semibold text-zinc-500 mb-3">MANAGE EVENT</p>
                   <button 
                     onClick={startEdit}
-                    className="w-full rounded-lg border border-zinc-300 px-4 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition flex items-center justify-center gap-2"
+                    className="w-full rounded-lg border border-zinc-300 px-4 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <FaEdit /> Edit Event
                   </button>
                   <button 
                     onClick={deleteEvent}
-                    className="w-full rounded-lg bg-red-500 px-4 py-2 font-medium text-white hover:bg-red-600 transition flex items-center justify-center gap-2"
+                    className="w-full rounded-lg bg-red-500 px-4 py-2 font-medium text-white hover:bg-red-600 transition flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <FaTrash /> Delete Event
                   </button>
@@ -506,13 +512,13 @@ export default function EventPage({ params }: { params: Promise<{ id: string }> 
             <div className="mt-8 flex gap-3 justify-end">
               <button 
                 onClick={() => setEditing(false)}
-                className="rounded-lg border border-zinc-300 px-6 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition"
+                className="rounded-lg border border-zinc-300 px-6 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition cursor-pointer"
               >
                 Cancel
               </button>
               <button 
                 onClick={saveEdit}
-                className="rounded-lg bg-pink-500 px-6 py-2 font-medium text-white hover:bg-pink-600 transition"
+                className="rounded-lg bg-pink-500 px-6 py-2 font-medium text-white hover:bg-pink-600 transition cursor-pointer"
               >
                 Save Changes
               </button>

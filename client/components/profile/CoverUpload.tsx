@@ -12,8 +12,8 @@ export default function CoverUpload({ value, onChange }: Props) {
     if (!file) return
     const form = new FormData()
     form.append('file', file)
-    form.append('upload_preset', process.env.NEXT_PUBLIC_CLOUDINARY_PRESET || '')
-    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD || ''
+    form.append('upload_preset', process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET || '')
+    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || ''
     const res = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, { method: 'POST', body: form })
     const data = await res.json()
     if (data.secure_url) onChange(data.secure_url)

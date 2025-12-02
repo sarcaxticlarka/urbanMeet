@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
+import passport from './config/passport'
 import authRoutes from './routes/auth'
 import userRoutes from './routes/users'
 import groupRoutes from './routes/groups'
@@ -15,6 +16,7 @@ dotenv.config()
 const app = express()
 app.use(cors())
 app.use(express.json())
+app.use(passport.initialize())
 
 app.get('/api/health', (req, res) => res.json({ ok: true }))
 

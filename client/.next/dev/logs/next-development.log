@@ -1,67 +1,839 @@
-[00:00:00.932] Server  LOG      ✓ Ready in 650ms
-[00:00:02.610] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:02.703] Server  LOG     Navbar rendered with user: null
-[00:00:02.703] Server  LOG     Navbar rendered with isLoggedIn: false
-[00:00:02.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.134] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
-[00:00:03.134] Browser LOG     Navbar rendered with user: null
-[00:00:03.134] Browser LOG     Navbar rendered with isLoggedIn: false
-[00:00:03.134] Browser LOG     Navbar rendered with user: null
-[00:00:03.134] Browser LOG     Navbar rendered with isLoggedIn: false
-[00:00:03.135] Browser LOG     Navbar rendered with user: null
-[00:00:03.135] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:00:03.135] Browser LOG     Navbar rendered with user: null
-[00:00:03.135] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:00:03.135] Browser LOG     Navbar rendered with user: null
-[00:00:03.135] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:00:03.135] Browser LOG     Navbar rendered with user: null
-[00:00:03.135] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:00:03.262] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:00:03.262] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:00:03.262] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:00:03.262] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:03:16.972] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:03:16.972] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:03:16.972] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:03:16.972] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:03:16.972] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:28.399] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.400] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.400] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.400] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.400] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.400] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.400] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.400] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.565] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.565] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.565] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.565] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.757] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.758] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:28.758] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:28.758] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.055] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.055] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.055] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.055] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.212] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.212] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.212] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.212] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.572] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.572] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.572] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.572] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.572] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.572] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:29.572] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:29.572] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:35.244] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:35.244] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:35.244] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:35.244] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:36.509] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:36.509] Browser LOG     Navbar rendered with isLoggedIn: true
-[00:04:36.509] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
-[00:04:36.509] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:00:00.814] Server  LOG      ✓ Ready in 600ms
+[00:00:04.738] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:04.827] Server  LOG     Navbar rendered with user: null
+[00:00:04.828] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:00:05.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.384] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:00:05.384] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.384] Browser LOG     Navbar rendered with user: null
+[00:00:05.384] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:00:05.384] Browser LOG     Navbar rendered with user: null
+[00:00:05.384] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:00:05.384] Browser LOG     Navbar rendered with user: null
+[00:00:05.384] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:00:05.384] Browser LOG     Navbar rendered with user: null
+[00:00:05.384] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:00:06.417] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:00:06.795] Browser LOG     Navbar rendered with user: null
+[00:00:06.796] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:00:06.796] Browser LOG     Navbar rendered with user: null
+[00:00:06.796] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:00:37.122] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:01:07.126] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:01:38.129] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:01:59.874] Browser LOG     Navbar rendered with user: null
+[00:01:59.874] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:01:59.874] Browser LOG     Navbar rendered with user: null
+[00:01:59.874] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:01:59.874] Browser LOG     Navbar rendered with user: null
+[00:01:59.874] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:01:59.874] Browser LOG     Navbar rendered with user: null
+[00:01:59.874] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:01:59.874] Browser LOG     Navbar rendered with user: null
+[00:01:59.874] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:01:59.874] Browser LOG     Navbar rendered with user: null
+[00:01:59.874] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:19.583] Server  LOG     Navbar rendered with user: null
+[00:02:19.583] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:02:19.730] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:19.902] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:02:19.902] Browser LOG     Navbar rendered with user: null
+[00:02:19.902] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:19.902] Browser LOG     Navbar rendered with user: null
+[00:02:19.902] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:19.902] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:19.902] Browser LOG     Navbar rendered with user: null
+[00:02:19.902] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:19.902] Browser LOG     Navbar rendered with user: null
+[00:02:19.902] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:19.902] Browser LOG     Navbar rendered with user: null
+[00:02:19.902] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:19.902] Browser LOG     Navbar rendered with user: null
+[00:02:19.902] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.149] Browser LOG     Navbar rendered with user: null
+[00:02:20.149] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.149] Browser LOG     Navbar rendered with user: null
+[00:02:20.149] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.149] Browser LOG     Navbar rendered with user: null
+[00:02:20.149] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.149] Browser LOG     Navbar rendered with user: null
+[00:02:20.149] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.149] Browser LOG     Navbar rendered with user: null
+[00:02:20.149] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.149] Browser LOG     Navbar rendered with user: null
+[00:02:20.149] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:20.685] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:02:21.186] Browser LOG     Navbar rendered with user: null
+[00:02:21.186] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:21.186] Browser LOG     Navbar rendered with user: null
+[00:02:21.186] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:25.351] Browser LOG     Navbar rendered with user: null
+[00:02:25.351] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:25.351] Browser LOG     Navbar rendered with user: null
+[00:02:25.351] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:25.351] Browser LOG     Navbar rendered with user: null
+[00:02:25.351] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:25.351] Browser LOG     Navbar rendered with user: null
+[00:02:25.351] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:25.351] Browser LOG     Navbar rendered with user: null
+[00:02:25.351] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:25.351] Browser LOG     Navbar rendered with user: null
+[00:02:25.351] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:27.247] Browser LOG     Navbar rendered with user: null
+[00:02:27.247] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:27.247] Browser LOG     Navbar rendered with user: null
+[00:02:27.247] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:42.383] Server  LOG      ✓ Compiled in 59ms
+[00:02:42.390] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Desktop/urbanMeet/client/node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:42.599] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:02:42.763] Server  LOG     Navbar rendered with user: null
+[00:02:42.765] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:02:43.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:43.837] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:43.837] Browser LOG     Navbar rendered with user: null
+[00:02:43.837] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:02:44.541] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:02:44.541] Browser LOG     Navbar rendered with user: null
+[00:02:44.541] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:02:44.541] Browser LOG     Navbar rendered with user: null
+[00:02:44.541] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:07.961] Server  LOG     Navbar rendered with user: null
+[00:03:07.961] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:03:08.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:08.446] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:03:08.446] Browser LOG     Navbar rendered with user: null
+[00:03:08.446] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:08.446] Browser LOG     Navbar rendered with user: null
+[00:03:08.446] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:08.446] Browser LOG     Navbar rendered with user: null
+[00:03:08.446] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:08.446] Browser LOG     Navbar rendered with user: null
+[00:03:08.446] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:08.446] Browser LOG     Navbar rendered with user: null
+[00:03:08.446] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:08.446] Browser LOG     Navbar rendered with user: null
+[00:03:08.446] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:09.413] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:03:09.764] Browser LOG     Navbar rendered with user: null
+[00:03:09.764] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:09.764] Browser LOG     Navbar rendered with user: null
+[00:03:09.764] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:16.408] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:03:16.492] Server  LOG     Navbar rendered with user: null
+[00:03:16.493] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:03:16.720] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:17.012] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:03:17.013] Browser LOG     Navbar rendered with user: null
+[00:03:17.013] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:17.013] Browser LOG     Navbar rendered with user: null
+[00:03:17.013] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:17.013] Browser LOG     Navbar rendered with user: null
+[00:03:17.013] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:17.013] Browser LOG     Navbar rendered with user: null
+[00:03:17.013] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:03:17.823] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:03:18.257] Browser LOG     Navbar rendered with user: null
+[00:03:18.257] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:18.257] Browser LOG     Navbar rendered with user: null
+[00:03:18.257] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:21.098] Browser LOG     Navbar rendered with user: null
+[00:03:21.098] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:21.098] Browser LOG     Navbar rendered with user: null
+[00:03:21.098] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:21.098] Browser LOG     Navbar rendered with user: null
+[00:03:21.098] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:21.098] Browser LOG     Navbar rendered with user: null
+[00:03:21.098] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:21.098] Browser LOG     Navbar rendered with user: null
+[00:03:21.098] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:03:21.098] Browser LOG     Navbar rendered with user: null
+[00:03:21.098] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:08.132] Server  LOG     Navbar rendered with user: null
+[00:04:08.133] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:04:08.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:08.853] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:08.853] Browser LOG     Navbar rendered with user: null
+[00:04:08.853] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:09.479] Server  LOG     Navbar rendered with user: null
+[00:04:09.479] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:04:09.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:09.858] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:04:09.858] Browser LOG     Navbar rendered with user: null
+[00:04:09.858] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:09.859] Browser LOG     Navbar rendered with user: null
+[00:04:09.859] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:09.859] Browser LOG     Navbar rendered with user: null
+[00:04:09.859] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:09.859] Browser LOG     Navbar rendered with user: null
+[00:04:09.859] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:09.859] Browser LOG     Navbar rendered with user: null
+[00:04:09.859] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:09.859] Browser LOG     Navbar rendered with user: null
+[00:04:09.859] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.232] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:10.783] Browser LOG     Navbar rendered with user: null
+[00:04:10.783] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:12.391] Server  LOG     Navbar rendered with user: null
+[00:04:12.392] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:04:12.621] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:12.908] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:04:12.908] Browser LOG     Navbar rendered with user: null
+[00:04:12.908] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:12.908] Browser LOG     Navbar rendered with user: null
+[00:04:12.908] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:12.908] Browser LOG     Navbar rendered with user: null
+[00:04:12.908] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:12.908] Browser LOG     Navbar rendered with user: null
+[00:04:12.908] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:04:13.789] Browser LOG     Navbar rendered with user: null
+[00:04:13.789] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:13.789] Browser LOG     Navbar rendered with user: null
+[00:04:13.789] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:13.789] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://urbanmeet.onrender.com/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:04:15.454] Browser LOG     Navbar rendered with user: null
+[00:04:15.454] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:15.454] Browser LOG     Navbar rendered with user: null
+[00:04:15.454] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:15.454] Browser LOG     Navbar rendered with user: null
+[00:04:15.454] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:15.454] Browser LOG     Navbar rendered with user: null
+[00:04:15.454] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:15.454] Browser LOG     Navbar rendered with user: null
+[00:04:15.454] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:15.454] Browser LOG     Navbar rendered with user: null
+[00:04:15.454] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:04:15.454] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:21.321] Server  LOG        Reload env: .env.local
+[00:06:53.269] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:06:53.409] Server  LOG     Navbar rendered with user: null
+[00:06:53.410] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:06:53.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:53.948] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/auth/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/u...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:06:53.948] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:06:53.948] Browser LOG     Navbar rendered with user: null
+[00:06:53.948] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:06:53.948] Browser LOG     Navbar rendered with user: null
+[00:06:53.948] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:06:53.948] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:53.948] Browser LOG     Navbar rendered with user: null
+[00:06:53.948] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:06:53.948] Browser LOG     Navbar rendered with user: null
+[00:06:53.948] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:06:53.948] Browser ERROR   Failed to fetch notifications: {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2515:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)"}
+[00:06:53.948] Browser LOG     Navbar rendered with user: null
+[00:06:53.948] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:06:53.948] Browser LOG     Navbar rendered with user: null
+[00:06:53.948] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:07:23.873] Browser ERROR   Failed to fetch notifications: {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2515:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)"}
+[00:07:56.470] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:08:24.467] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:08:26.445] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:08:26.566] Browser LOG     Navbar rendered with user: null
+[00:08:26.566] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:26.566] Browser LOG     Navbar rendered with user: null
+[00:08:26.566] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:31.015] Server  LOG     Navbar rendered with user: null
+[00:08:31.016] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:08:31.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:31.395] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:08:31.508] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:31.508] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.508] Browser LOG     Navbar rendered with user: null
+[00:08:31.508] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:08:31.666] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:08:33.833] Browser LOG     Navbar rendered with user: null
+[00:08:33.833] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:33.833] Browser LOG     Navbar rendered with user: null
+[00:08:33.833] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:35.284] Browser LOG     Navbar rendered with user: null
+[00:08:35.284] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:08:35.284] Browser LOG     Navbar rendered with user: null
+[00:08:35.284] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:34.394] Server  LOG     Navbar rendered with user: null
+[00:09:34.395] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:09:34.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:34.867] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:09:34.867] Browser LOG     Navbar rendered with user: null
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:34.867] Browser LOG     Navbar rendered with user: null
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:34.867] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:34.867] Browser LOG     Navbar rendered with user: null
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: null
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: null
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: null
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:34.867] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:34.867] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:38.569] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:38.569] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:38.569] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:09:38.569] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:40.849] Server  LOG     Navbar rendered with user: null
+[00:09:40.850] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:09:40.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:41.131] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:09:41.131] Browser LOG     Navbar rendered with user: null
+[00:09:41.131] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:41.131] Browser LOG     Navbar rendered with user: null
+[00:09:41.131] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:41.131] Browser LOG     Navbar rendered with user: null
+[00:09:41.131] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:41.131] Browser LOG     Navbar rendered with user: null
+[00:09:41.131] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:41.131] Browser LOG     Navbar rendered with user: null
+[00:09:41.131] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:41.131] Browser LOG     Navbar rendered with user: null
+[00:09:41.131] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:09:41.670] Browser LOG     Navbar rendered with user: null
+[00:09:41.670] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:41.670] Browser LOG     Navbar rendered with user: null
+[00:09:41.670] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:41.670] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:09:42.479] Browser LOG     Navbar rendered with user: null
+[00:09:42.479] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:42.479] Browser LOG     Navbar rendered with user: null
+[00:09:42.479] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:42.479] Browser LOG     Navbar rendered with user: null
+[00:09:42.479] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:42.479] Browser LOG     Navbar rendered with user: null
+[00:09:42.479] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:42.479] Browser LOG     Navbar rendered with user: null
+[00:09:42.479] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:42.479] Browser LOG     Navbar rendered with user: null
+[00:09:42.479] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:09:42.479] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:14.747] Server  LOG     Navbar rendered with user: null
+[00:12:14.747] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:12:14.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:15.148] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:12:15.148] Browser LOG     Navbar rendered with user: null
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:15.148] Browser LOG     Navbar rendered with user: null
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:15.148] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:15.148] Browser LOG     Navbar rendered with user: null
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: null
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: null
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: null
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:15.148] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:12:15.148] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:16.402] Server  LOG     Navbar rendered with user: null
+[00:12:16.402] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:12:16.490] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:16.640] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:12:16.640] Browser LOG     Navbar rendered with user: null
+[00:12:16.640] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:16.640] Browser LOG     Navbar rendered with user: null
+[00:12:16.640] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:16.640] Browser LOG     Navbar rendered with user: null
+[00:12:16.640] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:16.640] Browser LOG     Navbar rendered with user: null
+[00:12:16.640] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:16.640] Browser LOG     Navbar rendered with user: null
+[00:12:16.640] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:16.640] Browser LOG     Navbar rendered with user: null
+[00:12:16.640] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:12:17.214] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:12:17.214] Browser LOG     Navbar rendered with user: null
+[00:12:17.214] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:17.214] Browser LOG     Navbar rendered with user: null
+[00:12:17.214] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser LOG     Navbar rendered with user: null
+[00:12:18.406] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser LOG     Navbar rendered with user: null
+[00:12:18.406] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser LOG     Navbar rendered with user: null
+[00:12:18.406] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser LOG     Navbar rendered with user: null
+[00:12:18.406] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser LOG     Navbar rendered with user: null
+[00:12:18.406] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser LOG     Navbar rendered with user: null
+[00:12:18.406] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:12:18.406] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:06.326] Server  LOG     Navbar rendered with user: null
+[00:15:06.327] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:15:06.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:06.894] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:15:06.894] Browser LOG     Navbar rendered with user: null
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:06.894] Browser LOG     Navbar rendered with user: null
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:06.894] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:06.894] Browser LOG     Navbar rendered with user: null
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: null
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: null
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: null
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:06.894] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:06.894] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:08.364] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:15:08.482] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:08.482] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:08.482] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:08.482] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:08.482] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:08.482] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:08.482] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:08.482] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:08.482] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:08.482] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:08.482] Browser LOG     Navbar rendered with user: {"avatarUrl":null,"id":"cmimnsb9u0000p6khf80ml77t","name":"Ashu"}
+[00:15:08.482] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:11.230] Server  LOG     Navbar rendered with user: null
+[00:15:11.230] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:15:11.387] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:11.568] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:15:11.568] Browser LOG     Navbar rendered with user: null
+[00:15:11.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:11.568] Browser LOG     Navbar rendered with user: null
+[00:15:11.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:11.568] Browser LOG     Navbar rendered with user: null
+[00:15:11.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:11.568] Browser LOG     Navbar rendered with user: null
+[00:15:11.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:11.568] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:12.849] Browser LOG     Navbar rendered with user: null
+[00:15:12.849] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:13.696] Browser ERROR   Failed to fetch notifications: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWltbnNiOXUwMDAwcDZraGY4MG1sNzd0IiwiaWF0IjoxNzY0NjA1NjA5LCJleHAiOjE3NjcxOTc2MDl9.HuhP1MTawjxT3GspYGLZsjEmbM-4qGYfosFDSGxU6m8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2469:208)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)","status":401}
+[00:15:13.696] Browser LOG     Navbar rendered with user: null
+[00:15:13.696] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:13.696] Browser LOG     Navbar rendered with user: null
+[00:15:13.696] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:17.784] Browser LOG     Navbar rendered with user: null
+[00:15:17.784] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:17.784] Browser LOG     Navbar rendered with user: null
+[00:15:17.784] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:34.939] Server  LOG     Navbar rendered with user: null
+[00:15:34.939] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:15:35.127] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:35.308] Browser LOG     Login called with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWlvOXZxcDcwMDAwNHN1YTh0MGhuNTh1IiwiaWF0IjoxNzY0NjYxNDc4LCJleHAiOjE3NjcyNTM0Nzh9.6fOgcD2IQroZ5p7iNn4sqGD09OHo8GLiRi6wTDdLUhA
+[00:15:35.308] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Login called with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWlvOXZxcDcwMDAwNHN1YTh0MGhuNTh1IiwiaWF0IjoxNzY0NjYxNDc4LCJleHAiOjE3NjcyNTM0Nzh9.6fOgcD2IQroZ5p7iNn4sqGD09OHo8GLiRi6wTDdLUhA
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:35.308] Browser LOG     Navbar rendered with user: null
+[00:15:35.308] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:36.109] Browser LOG     User after login: null
+[00:15:36.109] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:15:36.109] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:36.109] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:15:36.109] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:36.964] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:15:36.964] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:36.964] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:15:36.964] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:37.457] Browser LOG     User after login: null
+[00:15:37.457] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:15:37.457] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:15:37.457] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:15:37.457] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:38.941] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:16:38.942] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:38.942] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"SELFISH_ 0786"}
+[00:16:38.942] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:40.899] Server  LOG     Navbar rendered with user: null
+[00:16:40.899] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:16:41.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:41.219] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/profile" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/u...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:16:41.219] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:16:41.219] Browser LOG     Navbar rendered with user: null
+[00:16:41.219] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:16:41.219] Browser LOG     Navbar rendered with user: null
+[00:16:41.219] Browser LOG     Navbar rendered with isLoggedIn: false
+[00:16:41.219] Browser LOG     Navbar rendered with user: null
+[00:16:41.219] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:41.219] Browser LOG     Navbar rendered with user: null
+[00:16:41.219] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:41.219] Browser LOG     Navbar rendered with user: null
+[00:16:41.219] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:41.219] Browser LOG     Navbar rendered with user: null
+[00:16:41.219] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:42.559] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:16:42.559] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:16:42.559] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:16:42.559] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:22:55.891] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:22:55.891] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:22:55.891] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:22:55.891] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:22:55.891] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:22:55.891] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:22:55.891] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:20.817] Server  LOG      ✓ Compiled in 67ms
+[00:24:42.934] Server  LOG      ✓ Compiled in 38ms
+[00:25:09.093] Server  LOG      ✓ Compiled in 66ms
+[00:25:11.197] Server  LOG      ✓ Compiled in 21ms
+[00:25:13.299] Server  LOG      ✓ Compiled in 22ms
+[00:25:40.744] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:40.744] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:40.744] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:40.744] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:40.744] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:40.744] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:40.744] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:40.744] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:40.744] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:40.744] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:40.744] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:40.744] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:44.750] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:44.750] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:44.750] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:44.750] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:44.750] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:44.750] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:44.750] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:44.750] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:44.750] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:44.750] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:44.750] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:44.750] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:53.336] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:53.336] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:53.336] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:53.336] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:54.350] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:25:54.460] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:54.460] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:54.460] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:54.460] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:56.038] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:56.038] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:25:56.038] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:25:56.038] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:20.167] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:20.167] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:20.167] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://lh3.googleusercontent.com/a/ACg8ocKAXq4G2ZgFUWuyXzyaY5hQunw_hHMJpu1TZiaccZyK_jBDK5A=s96-c","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:20.167] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:21.405] Server  LOG     Navbar rendered with user: null
+[00:26:21.405] Server  LOG     Navbar rendered with isLoggedIn: false
+[00:26:21.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:21.709] Browser LOG     AuthContext initialized {"isLoggedIn":false,"user":null}
+[00:26:21.709] Browser LOG     Navbar rendered with user: null
+[00:26:21.709] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:21.709] Browser LOG     Navbar rendered with user: null
+[00:26:21.709] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:21.709] Browser WARN    Image with src "/assets/peoplegrp.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:21.709] Browser LOG     Navbar rendered with user: null
+[00:26:21.709] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:21.709] Browser LOG     Navbar rendered with user: null
+[00:26:21.709] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:24.306] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:24.306] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:24.306] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:24.306] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:25.793] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:25.794] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:25.794] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:25.794] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:27.465] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:27.466] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:27.466] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:27.466] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:28.759] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:28.759] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:28.759] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:28.759] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:29.568] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:29.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:29.568] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:29.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:29.568] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:29.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:29.568] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:29.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:29.568] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:29.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:29.568] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:29.568] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:33.525] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:33.525] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:26:33.526] Browser LOG     Navbar rendered with user: {"avatarUrl":"https://res.cloudinary.com/dktaam6yi/image/upload/v1764662116/echkxpujxmf4pi9nv7t7.jpg","id":"cmio9vqp700004sua8t0hn58u","name":"Hello"}
+[00:26:33.526] Browser LOG     Navbar rendered with isLoggedIn: true
+[00:27:23.120] Browser ERROR   Failed to fetch notifications: {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:4000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWlvOXZxcDcwMDAwNHN1YTh0MGhuNTh1IiwiaWF0IjoxNzY0NjYxNDc4LCJleHAiOjE3NjcyNTM0Nzh9.6fOgcD2IQroZ5p7iNn4sqGD09OHo8GLiRi6wTDdLUhA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/notifications","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:2515:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/acf4e_axios_lib_ad871c14._.js:3273:49)\n    at async refreshNotifications (http://localhost:3000/_next/static/chunks/Desktop_urbanMeet_client_76aee94a._.js:180:25)"}

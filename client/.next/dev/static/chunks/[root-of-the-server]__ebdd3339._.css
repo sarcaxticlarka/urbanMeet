@@ -1546,10 +1546,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .flex-col {
     flex-direction: column;
   }
@@ -2027,6 +2023,10 @@
 
   .border-rose-300 {
     border-color: var(--color-rose-300);
+  }
+
+  .border-rose-400 {
+    border-color: var(--color-rose-400);
   }
 
   .border-rose-500\/60 {

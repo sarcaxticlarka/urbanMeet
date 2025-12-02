@@ -123,7 +123,7 @@ export default function GroupsPage() {
               <div className="flex items-end">
                 <button
                   type="submit"
-                  className="w-full md:w-auto bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition shadow-lg"
+                  className="w-full md:w-auto bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition shadow-lg cursor-pointer"
                 >
                   Search
                 </button>
@@ -144,7 +144,7 @@ export default function GroupsPage() {
                   setCity('')
                   router.push('/groups')
                 }}
-                className="text-sm text-purple-600 hover:text-purple-700 font-semibold"
+                className="text-sm text-purple-600 hover:text-purple-700 font-semibold cursor-pointer"
               >
                 Clear filters
               </button>
@@ -162,7 +162,7 @@ export default function GroupsPage() {
           </h2>
           <Link
             href="/groups/create"
-            className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full font-bold hover:from-purple-700 hover:to-pink-700 transition shadow-lg flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap"
+            className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full font-bold hover:from-purple-700 hover:to-pink-700 transition shadow-lg flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -231,7 +231,7 @@ export default function GroupsPage() {
                           {/* Left Circle Cutout (desktop) */}
                           <div className="hidden md:block absolute -left-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-gray-50 rounded-full z-20"></div>
                           
-                          <Link href={`/groups/${group.id}`} className={`${theme.button} text-white px-5 py-2 rounded-full text-xs font-semibold hover:opacity-90`}>View Group »</Link>
+                          <Link href={`/groups/${group.id}`} className={`${theme.button} text-white px-5 py-2 rounded-full text-xs font-semibold hover:opacity-90 cursor-pointer`}>View Group »</Link>
                         </div>
                       </div>
                     )
@@ -246,13 +246,13 @@ export default function GroupsPage() {
                   setCity('')
                   router.push('/groups')
                 }}
-                className="inline-flex items-center rounded-full bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 text-sm font-semibold shadow"
+                className="inline-flex items-center rounded-full bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 text-sm font-semibold shadow cursor-pointer"
               >
                 See all groups
               </button>
               <Link
                 href="/groups/create"
-                className="inline-flex items-center rounded-full bg-white border border-purple-600 text-purple-600 hover:bg-purple-50 px-6 py-3 text-sm font-semibold shadow"
+                className="inline-flex items-center rounded-full bg-white border border-purple-600 text-purple-600 hover:bg-purple-50 px-6 py-3 text-sm font-semibold shadow cursor-pointer"
               >
                 Create a new group
               </Link>
@@ -335,7 +335,7 @@ export default function GroupsPage() {
 
                   <Link 
                     href={`/groups/${group.id}`}
-                    className={`${theme.button} text-white px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity flex items-center gap-2`}
+                    className={`${theme.button} text-white px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity flex items-center gap-2 cursor-pointer`}
                   >
                     View Group
                     <span>»</span>
@@ -363,7 +363,7 @@ export default function GroupsPage() {
           <p className="text-xl mb-8">Create your own group and bring people together!</p>
           <Link
             href="/groups/create"
-            className="inline-block bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl"
+            className="inline-block bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl cursor-pointer"
           >
             Start Your Group Today
           </Link>

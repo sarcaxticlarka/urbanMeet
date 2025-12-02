@@ -40,7 +40,10 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
   const joinMutation = useMutation({
     mutationFn: async () => {
       const token = localStorage.getItem('token')
-      if (!token) throw new Error('Not logged in')
+      if (!token) {
+        router.push('/auth/login?redirect=/groups/' + id)
+        throw new Error('Not logged in')
+      }
       await API.post(`/groups/${id}/join`, {}, { headers: { Authorization: `Bearer ${token}` } })
     },
     onSuccess: () => {
@@ -51,7 +54,10 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
   const leaveMutation = useMutation({
     mutationFn: async () => {
       const token = localStorage.getItem('token')
-      if (!token) throw new Error('Not logged in')
+      if (!token) {
+        router.push('/auth/login?redirect=/groups/' + id)
+        throw new Error('Not logged in')
+      }
       await API.delete(`/groups/${id}/leave`, { headers: { Authorization: `Bearer ${token}` } })
     },
     onSuccess: () => {
@@ -182,7 +188,7 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
                 {isMember && (
                   <Link
                     href={`/events/create?groupId=${id}`}
-                    className="text-pink-600 hover:text-pink-700 font-semibold flex items-center gap-1"
+                    className="text-pink-600 hover:text-pink-700 font-semibold flex items-center gap-1 cursor-pointer"
                   >
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -236,7 +242,7 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
                   <button 
                     onClick={() => joinMutation.mutate()}
                     disabled={joinMutation.isPending}
-                    className="w-full rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white hover:bg-pink-600 transition disabled:opacity-50"
+                    className="w-full rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white hover:bg-pink-600 transition disabled:opacity-50 cursor-pointer"
                   >
                     {joinMutation.isPending ? 'Joining...' : 'Join Group'}
                   </button>
@@ -244,7 +250,7 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
                   <button 
                     onClick={() => leaveMutation.mutate()}
                     disabled={leaveMutation.isPending}
-                    className="w-full rounded-lg border-2 border-zinc-300 px-6 py-3 font-semibold text-zinc-700 hover:bg-zinc-50 transition disabled:opacity-50"
+                    className="w-full rounded-lg border-2 border-zinc-300 px-6 py-3 font-semibold text-zinc-700 hover:bg-zinc-50 transition disabled:opacity-50 cursor-pointer"
                   >
                     {leaveMutation.isPending ? 'Leaving...' : 'Leave Group'}
                   </button>
@@ -282,13 +288,13 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
                   <p className="text-xs font-semibold text-zinc-500 mb-3">MANAGE GROUP</p>
                   <button 
                     onClick={startEdit}
-                    className="w-full rounded-lg border border-zinc-300 px-4 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition flex items-center justify-center gap-2"
+                    className="w-full rounded-lg border border-zinc-300 px-4 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <FaEdit /> Edit Group
                   </button>
                   <button 
                     onClick={deleteGroup}
-                    className="w-full rounded-lg bg-red-500 px-4 py-2 font-medium text-white hover:bg-red-600 transition flex items-center justify-center gap-2"
+                    className="w-full rounded-lg bg-red-500 px-4 py-2 font-medium text-white hover:bg-red-600 transition flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <FaTrash /> Delete Group
                   </button>
@@ -347,13 +353,13 @@ export default function GroupPage({ params }: { params: Promise<{ id: string }> 
             <div className="mt-8 flex gap-3 justify-end">
               <button 
                 onClick={() => setEditing(false)}
-                className="rounded-lg border border-zinc-300 px-6 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition"
+                className="rounded-lg border border-zinc-300 px-6 py-2 font-medium text-zinc-700 hover:bg-zinc-50 transition cursor-pointer"
               >
                 Cancel
               </button>
               <button 
                 onClick={saveEdit}
-                className="rounded-lg bg-pink-500 px-6 py-2 font-medium text-white hover:bg-pink-600 transition"
+                className="rounded-lg bg-pink-500 px-6 py-2 font-medium text-white hover:bg-pink-600 transition cursor-pointer"
               >
                 Save Changes
               </button>

@@ -92,14 +92,14 @@ export default function ProfilePage() {
                 <div className="md:col-span-2"><CoverUpload value={coverUrl} onChange={setCoverUrl} /></div>
               </div>
               <div className="flex gap-3 justify-end">
-                <button onClick={handleSave} className="rounded-lg bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-800">Save</button>
-                <button onClick={()=>setEditing(false)} className="rounded-lg border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100">Cancel</button>
+                <button onClick={handleSave} className="rounded-lg bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-800 cursor-pointer">Save</button>
+                <button onClick={()=>setEditing(false)} className="rounded-lg border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100 cursor-pointer">Cancel</button>
               </div>
             </div>
           )}
           {!editing && (
             <div className="flex justify-end">
-              <button onClick={()=>setEditing(true)} className="rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100">Edit Profile</button>
+              <button onClick={()=>setEditing(true)} className="rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100 cursor-pointer">Edit Profile</button>
             </div>
           )}
           {/* Events grid */}
@@ -107,8 +107,8 @@ export default function ProfilePage() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold text-zinc-900">Your Events</h2>
               <div className="flex gap-2">
-                <Link href="/groups/create" className="rounded-xl bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 text-sm text-white font-semibold shadow hover:from-pink-600 hover:to-purple-600">+ Create Group</Link>
-                <Link href="/events/create" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">Create Event →</Link>
+                <Link href="/groups/create" className="rounded-xl bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 text-sm text-white font-semibold shadow hover:from-pink-600 hover:to-purple-600 cursor-pointer">+ Create Group</Link>
+                <Link href="/events/create" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 cursor-pointer">Create Event →</Link>
               </div>
             </div>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

@@ -4,9 +4,11 @@ import jwt from 'jsonwebtoken'
 import crypto from 'crypto'
 import prisma from '../prisma'
 import { evaluatePasswordStrength, validateStrongPassword } from '../utils/password'
+import passport from '../config/passport'
 
 const router = Router()
 const JWT_SECRET = process.env.JWT_SECRET || 'dev_secret'
+const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000'
 
 // Email availability check
 router.get('/check-email', async (req, res) => {
@@ -89,5 +91,22 @@ router.get('/me', async (req: any, res) => {
     return res.status(401).json({ error: 'Invalid token' })
   }
 })
+
+// Google OAuth routes
+router.get('/google', passport.authenticate('google', { session: false }))
+
+router.get('/google/callback',
+  passport.authenticate('google', { session: false, failureRedirect: `${CLIENT_URL}/auth/login?error=google_auth_failed` }),
+  (req: any, res) => {
+    try {
+      // Generate JWT token
+      const token = jwt.sign({ userId: req.user.id }, JWT_SECRET, { expiresIn: '30d' })
+      // Redirect to client with token
+      res.redirect(`${CLIENT_URL}/auth/callback?token=${token}`)
+    } catch (error) {
+      res.redirect(`${CLIENT_URL}/auth/login?error=token_generation_failed`)
+    }
+  }
+)
 
 export default router

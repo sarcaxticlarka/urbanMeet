@@ -731,8 +731,8 @@ function AvatarUpload({ value, onChange }) {
         // Using existing ImageUploader approach: unsigned upload (placeholder)
         const form = new FormData();
         form.append('file', file);
-        form.append('upload_preset', __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CLOUDINARY_PRESET || '');
-        const cloudName = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CLOUDINARY_CLOUD || '';
+        form.append('upload_preset', ("TURBOPACK compile-time value", "urban_meet") || '');
+        const cloudName = ("TURBOPACK compile-time value", "dktaam6yi") || '';
         const res = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
             method: 'POST',
             body: form
@@ -817,8 +817,8 @@ function CoverUpload({ value, onChange }) {
         if (!file) return;
         const form = new FormData();
         form.append('file', file);
-        form.append('upload_preset', __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CLOUDINARY_PRESET || '');
-        const cloudName = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_CLOUDINARY_CLOUD || '';
+        form.append('upload_preset', ("TURBOPACK compile-time value", "urban_meet") || '');
+        const cloudName = ("TURBOPACK compile-time value", "dktaam6yi") || '';
         const res = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
             method: 'POST',
             body: form
@@ -1300,7 +1300,7 @@ function ProfilePage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: handleSave,
-                                            className: "rounded-lg bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-800",
+                                            className: "rounded-lg bg-zinc-900 px-5 py-2 text-sm font-medium text-white hover:bg-zinc-800 cursor-pointer",
                                             children: "Save"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
@@ -1309,7 +1309,7 @@ function ProfilePage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setEditing(false),
-                                            className: "rounded-lg border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100",
+                                            className: "rounded-lg border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100 cursor-pointer",
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
@@ -1332,7 +1332,7 @@ function ProfilePage() {
                             className: "flex justify-end",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setEditing(true),
-                                className: "rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100",
+                                className: "rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100 cursor-pointer",
                                 children: "Edit Profile"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
@@ -1363,7 +1363,7 @@ function ProfilePage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     href: "/groups/create",
-                                                    className: "rounded-xl bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 text-sm text-white font-semibold shadow hover:from-pink-600 hover:to-purple-600",
+                                                    className: "rounded-xl bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 text-sm text-white font-semibold shadow hover:from-pink-600 hover:to-purple-600 cursor-pointer",
                                                     children: "+ Create Group"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",
@@ -1372,7 +1372,7 @@ function ProfilePage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$urbanMeet$2f$client$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     href: "/events/create",
-                                                    className: "text-sm font-medium text-indigo-600 hover:text-indigo-500",
+                                                    className: "text-sm font-medium text-indigo-600 hover:text-indigo-500 cursor-pointer",
                                                     children: "Create Event →"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/urbanMeet/client/app/profile/page.tsx",

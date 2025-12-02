@@ -11,6 +11,7 @@ model User {
   id        String   @id @default(cuid())
   email     String   @unique
   password  String?  // optional for social logins
+  googleId  String?  @unique // Google OAuth ID
   name      String?
   avatarUrl String?
   coverUrl  String?
